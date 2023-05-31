@@ -28,7 +28,6 @@ class LoginMainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         //고양이 애니메이션 출력
         view.addSubview(catAnimationView)
         catAnimationView.frame = view.bounds
@@ -36,14 +35,6 @@ class LoginMainVC: UIViewController {
         catAnimationView.alpha = 1
         catAnimationView.loopMode = .loop
         catAnimationView.play()
-//        { _ in
-////            UIView.animate(withDuration: 5, animations: {
-////                self.catAnimationView.alpha = 0
-////            }, completion: { _ in
-////                self.catAnimationView.isHidden = true
-////                self.catAnimationView.removeFromSuperview()
-////            })
-//        }
 
         //앱이름 레이블 출력
         view.addSubview(appTitleLabel)
@@ -71,7 +62,6 @@ class LoginMainVC: UIViewController {
         
         //둘러보기 버튼 출력
         view.addSubview(enterBtn)
-        //enterBtn.backgroundColor = UIColor(cgColor: CGColor(red: 109/255, green: 157/255, blue: 229/255, alpha: 1.0))
         enterBtn.backgroundColor = .white
         //레이블변경
         enterBtn.setTitle("둘러보기", for: .normal)
@@ -116,6 +106,7 @@ class LoginMainVC: UIViewController {
             emailLoginBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             emailLoginBtn.heightAnchor.constraint(equalToConstant: 50)
         ])
+        emailLoginBtn.addTarget(self, action: #selector(goResgisterVC), for: .touchUpInside)
         
     }
     
@@ -137,6 +128,17 @@ class LoginMainVC: UIViewController {
             guard let mainTC = storyboard.instantiateViewController(withIdentifier: "MainTabBar") as? UITabBarController else { return }
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTC, animated: true)
         }
+    }
+    
+    @objc func goResgisterVC(){
+
+        let navController = UINavigationController()
+        guard let registerVC = self.storyboard?.instantiateViewController(withIdentifier:"RegisterView") else { return }
+
+        navController.viewControllers = [registerVC]
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
+
     }
     
 }

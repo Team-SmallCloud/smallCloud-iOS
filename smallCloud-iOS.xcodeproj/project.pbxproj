@@ -12,12 +12,16 @@
 		9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */; };
 		9A24D6CD2A1F4830006759E3 /* catAndWire.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6CC2A1F4830006759E3 /* catAndWire.json */; };
 		9A24D6D12A20A7B0006759E3 /* loading-burst.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6D02A20A7AF006759E3 /* loading-burst.json */; };
+		9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332212A27481C0057215A /* Data.xcdatamodeld */; };
+		9A492DF22A265A8600836814 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A492DF12A265A8600836814 /* LoginVC.swift */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
 		9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* ViewController.swift */; };
 		9A9C1C7729EFEC0F002E972A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7529EFEC0F002E972A /* Main.storyboard */; };
 		9A9C1C7929EFEC10002E972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7829EFEC10002E972A /* Assets.xcassets */; };
 		9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */; };
+		9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */; };
+		9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,8 @@
 		9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainVC.swift; sourceTree = "<group>"; };
 		9A24D6CC2A1F4830006759E3 /* catAndWire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catAndWire.json; sourceTree = "<group>"; };
 		9A24D6D02A20A7AF006759E3 /* loading-burst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-burst.json"; sourceTree = "<group>"; };
+		9A3332222A27481C0057215A /* userInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userInfo.xcdatamodel; sourceTree = "<group>"; };
+		9A492DF12A265A8600836814 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		9A9C1C7829EFEC10002E972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9C1C7B29EFEC10002E972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9C1C7D29EFEC10002E972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +88,14 @@
 				9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */,
 				9A9C1C7329EFEC0F002E972A /* ViewController.swift */,
 				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
+				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
+				9A492DF12A265A8600836814 /* LoginVC.swift */,
+				9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */,
 				9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */,
 				9A9C1C7529EFEC0F002E972A /* Main.storyboard */,
 				9A9C1C7829EFEC10002E972A /* Assets.xcassets */,
 				9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */,
+				9A3332212A27481C0057215A /* Data.xcdatamodeld */,
 				9A9C1C7D29EFEC10002E972A /* Info.plist */,
 			);
 			path = "smallCloud-iOS";
@@ -169,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */,
 				9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
+				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
+				9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */,
+				9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */,
 				9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +425,19 @@
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9A3332212A27481C0057215A /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A3332222A27481C0057215A /* userInfo.xcdatamodel */,
+			);
+			currentVersion = 9A3332222A27481C0057215A /* userInfo.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A9C1C6429EFEC0F002E972A /* Project object */;
 }
