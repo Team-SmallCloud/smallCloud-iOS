@@ -16,9 +16,21 @@ class LoginVC: UIViewController {
         return app.persistentContainer.viewContext
     }
     
+    struct UserInfo:Codable{
+        let id:Int
+        let email:String
+        let password:String
+        let name:String
+        let phone:String
+        let reject:Bool
+        let birthday:String?
+        let safeMoney:Int
+    }
+    
     @IBOutlet weak var loginLbl: UILabel!
     let stackView = UIStackView()
     
+    var userInfo: UserInfo!
     let emailFormFieldView = FormFieldView(text:"Email")
     let pwFormFieldView = FormFieldView(text:"Password")
     let loginButton = makeButton(withText: "로그인")
@@ -70,6 +82,7 @@ extension LoginVC {
     
     @objc func loginBtnTapped() {
         
+        let semaphore = DispatchSemaphore(value: 0)
         var urlString = "http://3.39.188.228:9090/account/login"
 
         //텍스트필드 빈값 검증
@@ -100,22 +113,40 @@ extension LoginVC {
             }
             
             // 응답 처리
-            guard let data = data else {return}
-            let responseString = String(data: data, encoding: .utf8)
-            print("응답 데이터: \(responseString ?? "")")
+            guard let JSONdata = data else {return}
             
-            //리턴된 json값을 key:value 형식으로 변환
-            if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]{
-                
-                print("json[birthday]=\(json["birthday"])")
-                print("json[password]=\(json["password"])")
-                print("json[email]=\(json["email"])")
-                print("json[name]=\(json["name"])")
-                print("json[phone]=\(json["phone"])")
+            let decoder = JSONDecoder()
+            do {
+                let decodedData = try decoder.decode(UserInfo.self, from: JSONdata)
+                self.userInfo = decodedData
+            }catch{
+                print(error)
             }
+            semaphore.signal()
         }
         task.resume()
         
+        semaphore.wait()
+        let userEntity = NSEntityDescription.insertNewObject(forEntityName: "UserInfo", into: self.context)
+
+        userEntity.setValue(self.userInfo.email, forKey: "email")
+        userEntity.setValue(self.userInfo.password, forKey: "password")
+        userEntity.setValue(self.userInfo.name, forKey: "name")
+        userEntity.setValue(self.userInfo.phone, forKey: "phone")
+        userEntity.setValue(self.userInfo.birthday, forKey: "birthday")
+        userEntity.setValue(self.userInfo.safeMoney, forKey: "safeMoney")
+        userEntity.setValue(self.userInfo.reject, forKey: "reject")
+        
+        //영구저장소에 반영
+        do {
+            try self.context.save()
+            print("User Data saved successfully")
+
+        } catch {
+            print("Failed to save data: \(error)")
+        }
+            
+        dismiss(animated: true)
     }
 }
 

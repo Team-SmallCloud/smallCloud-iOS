@@ -137,8 +137,8 @@ class LoginMainVC: UIViewController {
 
         navController.viewControllers = [registerVC]
         navController.modalPresentationStyle = .fullScreen
-        self.present(navController, animated: true, completion: nil)
-
+        self.present(navController, animated: true){
+            self.changingToMainTabBar()
+        }
     }
-    
 }
