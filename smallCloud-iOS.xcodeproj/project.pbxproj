@@ -43,17 +43,17 @@
 		38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */; };
 		38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F72A2879E00091E300 /* libxml2.tbd */; };
 		38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapViewController.swift */; };
+		9A1EE25B2A29050A00AA1549 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25A2A29050A00AA1549 /* Alamofire */; };
+		9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25D2A29051A00AA1549 /* SwiftyJSON */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
 		9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* ViewController.swift */; };
 		9A9C1C7729EFEC0F002E972A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7529EFEC0F002E972A /* Main.storyboard */; };
 		9A9C1C7929EFEC10002E972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7829EFEC10002E972A /* Assets.xcassets */; };
 		9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */; };
-		C155FD782C6C866D8DC93234 /* Pods_smallCloud_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC413A1DDF8CDBC1B92CA740 /* Pods_smallCloud_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089D97E309434F97730FB038 /* Pods-smallCloud-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallCloud-iOS.release.xcconfig"; path = "Target Support Files/Pods-smallCloud-iOS/Pods-smallCloud-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		38E5C6A92A28720F0091E300 /* map_pinup_custom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pinup_custom@3x.png"; sourceTree = "<group>"; };
 		38E5C6AA2A28720F0091E300 /* map_pin_custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_custom.png; sourceTree = "<group>"; };
 		38E5C6AB2A28720F0091E300 /* shadow_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow_balloon.png; sourceTree = "<group>"; };
@@ -99,7 +99,6 @@
 		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
 		38E5C6FA2A2883170091E300 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		3BCB1ACAD740B12142BBD190 /* Pods-smallCloud-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallCloud-iOS.debug.xcconfig"; path = "Target Support Files/Pods-smallCloud-iOS/Pods-smallCloud-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +107,6 @@
 		9A9C1C7829EFEC10002E972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9C1C7B29EFEC10002E972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9C1C7D29EFEC10002E972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC413A1DDF8CDBC1B92CA740 /* Pods_smallCloud_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smallCloud_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1EE25B2A29050A00AA1549 /* Alamofire in Frameworks */,
 				38E5C6F42A2879C00091E300 /* libc++.tbd in Frameworks */,
 				38E5C6F02A28799D0091E300 /* QuartzCore.framework in Frameworks */,
 				38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */,
@@ -123,8 +122,8 @@
 				38E5C6EC2A2879810091E300 /* CoreLocation.framework in Frameworks */,
 				38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */,
 				38E5C6EE2A2879920091E300 /* Metal.framework in Frameworks */,
+				9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */,
 				38E5C6E92A28720F0091E300 /* DaumMap.framework in Frameworks */,
-				C155FD782C6C866D8DC93234 /* Pods_smallCloud_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +199,6 @@
 				38E5C6EF2A28799D0091E300 /* QuartzCore.framework */,
 				38E5C6ED2A2879920091E300 /* Metal.framework */,
 				38E5C6EB2A2879810091E300 /* CoreLocation.framework */,
-				CC413A1DDF8CDBC1B92CA740 /* Pods_smallCloud_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,7 +209,6 @@
 				9A9C1C6E29EFEC0F002E972A /* smallCloud-iOS */,
 				9A9C1C6D29EFEC0F002E972A /* Products */,
 				38E5C6EA2A2879800091E300 /* Frameworks */,
-				FE88532EF84CD3EC345CA21E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,16 +237,6 @@
 			path = "smallCloud-iOS";
 			sourceTree = "<group>";
 		};
-		FE88532EF84CD3EC345CA21E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3BCB1ACAD740B12142BBD190 /* Pods-smallCloud-iOS.debug.xcconfig */,
-				089D97E309434F97730FB038 /* Pods-smallCloud-iOS.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,17 +244,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A9C1C8029EFEC10002E972A /* Build configuration list for PBXNativeTarget "smallCloud-iOS" */;
 			buildPhases = (
-				FEFD3D9D4AF2AFB3B8433F47 /* [CP] Check Pods Manifest.lock */,
 				9A9C1C6829EFEC0F002E972A /* Sources */,
 				9A9C1C6929EFEC0F002E972A /* Frameworks */,
 				9A9C1C6A29EFEC0F002E972A /* Resources */,
-				0FAD45783C400069347B1579 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "smallCloud-iOS";
+			packageProductDependencies = (
+				9A1EE25A2A29050A00AA1549 /* Alamofire */,
+				9A1EE25D2A29051A00AA1549 /* SwiftyJSON */,
+			);
 			productName = "smallCloud-iOS";
 			productReference = 9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -296,6 +285,10 @@
 				Base,
 			);
 			mainGroup = 9A9C1C6329EFEC0F002E972A;
+			packageReferences = (
+				9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 9A9C1C6D29EFEC0F002E972A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,48 +337,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0FAD45783C400069347B1579 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-smallCloud-iOS/Pods-smallCloud-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-smallCloud-iOS/Pods-smallCloud-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smallCloud-iOS/Pods-smallCloud-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FEFD3D9D4AF2AFB3B8433F47 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-smallCloud-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A9C1C6829EFEC0F002E972A /* Sources */ = {
@@ -537,14 +488,13 @@
 		};
 		9A9C1C8129EFEC10002E972A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BCB1ACAD740B12142BBD190 /* Pods-smallCloud-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7B8C9UPQZ8;
+				DEVELOPMENT_TEAM = WCTHZ894XR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/smallCloud-iOS/DaumMap.embeddedframework",
@@ -564,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.smallCloud.smallCloud-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/man/Desktop/smallCloud-iOS/smallCloud-iOS/Kakao-Map-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./smallCloud-iOS/Kakao-Map-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -572,14 +522,13 @@
 		};
 		9A9C1C8229EFEC10002E972A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 089D97E309434F97730FB038 /* Pods-smallCloud-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7B8C9UPQZ8;
+				DEVELOPMENT_TEAM = WCTHZ894XR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/smallCloud-iOS/DaumMap.embeddedframework",
@@ -599,7 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.smallCloud.smallCloud-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/man/Desktop/smallCloud-iOS/smallCloud-iOS/Kakao-Map-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./smallCloud-iOS/Kakao-Map-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -627,6 +576,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A1EE25A2A29050A00AA1549 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9A1EE25D2A29051A00AA1549 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A9C1C6429EFEC0F002E972A /* Project object */;
 }
