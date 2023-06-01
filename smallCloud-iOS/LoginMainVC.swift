@@ -26,6 +26,10 @@ class LoginMainVC: UIViewController {
     //계정찾기 버튼
     let forgotAccountBtn = UIButton(type: .system)
     
+    //둘러보기 버튼 그림자
+    let enterBtnShadow = UIView()
+    let emailLoginBtnShadow = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //고양이 애니메이션 출력
@@ -60,53 +64,72 @@ class LoginMainVC: UIViewController {
             forgotAccountBtn.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60)
         ])
         
-        //둘러보기 버튼 출력
-        view.addSubview(enterBtn)
+        //둘러보기 버튼 부모뷰, 검은 그림자
+        enterBtnShadow.backgroundColor = UIColor(cgColor: CGColor(red: 1, green: 1, blue: 1, alpha: 0.1))
+        enterBtnShadow.layer.shadowColor = UIColor.gray.cgColor
+        enterBtnShadow.layer.shadowOffset = CGSize(width: 0, height: -5)
+        enterBtnShadow.layer.shadowOpacity = 0.08
+        view.addSubview(enterBtnShadow)
+        //로그인 버튼 부모뷰, 검은 그림자
+        emailLoginBtnShadow.backgroundColor = UIColor(cgColor: CGColor(red: 1, green: 1, blue: 1, alpha: 0.1))
+        emailLoginBtnShadow.layer.shadowColor = UIColor.gray.cgColor
+        emailLoginBtnShadow.layer.shadowOffset = CGSize(width: 0, height: -5)
+        emailLoginBtnShadow.layer.shadowOpacity = 0.1
+        view.addSubview(emailLoginBtnShadow)
+        
+        //둘러보기 버튼
         enterBtn.backgroundColor = .white
         //레이블변경
         enterBtn.setTitle("둘러보기", for: .normal)
         enterBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         enterBtn.setTitleColor( .black, for: .normal)
-        //외형변경
+        //둥근모서리, 파란그림자
         enterBtn.layer.cornerRadius = 10
         enterBtn.layer.masksToBounds = true
         enterBtn.clipsToBounds = false
         enterBtn.layer.shadowColor = CGColor(red: 109/255, green: 157/255, blue: 229/255, alpha: 1.0)
         enterBtn.layer.shadowOffset = CGSize(width: 0, height: 8)
         enterBtn.layer.shadowOpacity = 0.4
-        //오토레이아웃
-        enterBtn.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            enterBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            enterBtn.bottomAnchor.constraint(equalTo: forgotAccountBtn.topAnchor, constant: -20),
-            enterBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            enterBtn.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        //동작설정
         enterBtn.addTarget(self, action: #selector(changingToMainTabBar), for: .touchUpInside)
         
-        //이메일로그인 버튼 출력
-        view.addSubview(emailLoginBtn)
+        //이메일로그인 버튼
         emailLoginBtn.backgroundColor = UIColor(cgColor: CGColor(red: 109/255, green: 157/255, blue: 229/255, alpha: 1.0))
         //레이블변경
         emailLoginBtn.setTitle("이메일로 시작하기", for: .normal)
         emailLoginBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         emailLoginBtn.setTitleColor(.white, for: .normal)
-        //외형변경
+        //둥근모서리, 파란그림자
         emailLoginBtn.layer.cornerRadius = 10
         emailLoginBtn.layer.masksToBounds = true
         emailLoginBtn.clipsToBounds = false
         emailLoginBtn.layer.shadowColor = CGColor(red: 109/255, green: 157/255, blue: 229/255, alpha: 1.0)
         emailLoginBtn.layer.shadowOffset = CGSize(width: 0, height: 8)
         emailLoginBtn.layer.shadowOpacity = 0.4
-        //오토레이아웃
-        emailLoginBtn.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            emailLoginBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            emailLoginBtn.bottomAnchor.constraint(equalTo: enterBtn.topAnchor, constant: -20),
-            emailLoginBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            emailLoginBtn.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        //동작설정
         emailLoginBtn.addTarget(self, action: #selector(goResgisterVC), for: .touchUpInside)
+        
+        //오토레이아웃
+        enterBtnShadow.translatesAutoresizingMaskIntoConstraints = false
+        emailLoginBtnShadow.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            enterBtnShadow.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            enterBtnShadow.bottomAnchor.constraint(equalTo: forgotAccountBtn.topAnchor, constant: -25),
+            enterBtnShadow.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            enterBtnShadow.heightAnchor.constraint(equalToConstant: 50),
+            
+            emailLoginBtnShadow.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            emailLoginBtnShadow.bottomAnchor.constraint(equalTo: enterBtnShadow.topAnchor, constant: -25),
+            emailLoginBtnShadow.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            emailLoginBtnShadow.heightAnchor.constraint(equalToConstant: 50)
+        ])
+        
+        //부모뷰에 버튼 삽입
+        view.layoutIfNeeded()
+        enterBtn.frame = enterBtnShadow.bounds
+        enterBtnShadow.addSubview(enterBtn)
+        emailLoginBtn.frame = emailLoginBtnShadow.bounds
+        emailLoginBtnShadow.addSubview(emailLoginBtn)
         
     }
     
