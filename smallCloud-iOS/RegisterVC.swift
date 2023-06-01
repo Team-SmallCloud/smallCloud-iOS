@@ -97,22 +97,18 @@ extension RegisterVC {
             "password": password,
             "phone": phone
         ]
-
-        guard let body = try? JSONSerialization.data(withJSONObject: parameters) else {
-            print("요청 바디 데이터를 생성하는 데 실패했습니다.")
-            return
-        }
+        
+        //dictionary -> key=value& 방식 String으로 변환
+        let parameterString = parameters.map { key, value in
+            return "\(key)=\(value)"
+        }.joined(separator: "&")
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.setValue("*/*", forHTTPHeaderField: "Accept")
-        
-        request.httpBody = body
-        ////
-        print("requestHead:\(request.allHTTPHeaderFields)!")
-        print("body:\(String(data: body, encoding: .utf8)!)")
-        
+        request.httpBody = parameterString.data(using: .utf8)
+
         // URLSession 요청 보내기
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
