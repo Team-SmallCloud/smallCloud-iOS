@@ -48,17 +48,26 @@
                                     <segue destination="0OP-YX-NXp" kind="show" id="ERr-nM-538"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQe-8P-Fxu">
+                                <rect key="frame" x="207" y="161" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tuj-0c-Z4p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="S7j-Be-NIe" firstAttribute="top" secondItem="Tuj-0c-Z4p" secondAttribute="top" constant="70" id="DTC-EE-tg1"/>
+                            <constraint firstItem="DQe-8P-Fxu" firstAttribute="top" secondItem="S7j-Be-NIe" secondAttribute="bottom" constant="7" id="Yte-XM-z20"/>
                             <constraint firstItem="S7j-Be-NIe" firstAttribute="centerX" secondItem="GYu-9O-XtH" secondAttribute="centerX" id="nQ8-Go-yb9"/>
+                            <constraint firstItem="DQe-8P-Fxu" firstAttribute="centerX" secondItem="GYu-9O-XtH" secondAttribute="centerX" id="ti3-t5-taH"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="alertLbl" destination="DQe-8P-Fxu" id="HDC-tt-Swx"/>
                         <outlet property="goLoginBtn" destination="f2O-nx-3yH" id="sz3-BK-2bN"/>
                         <outlet property="welcomeLbl" destination="S7j-Be-NIe" id="WvJ-1H-FGR"/>
                     </connections>

@@ -6,9 +6,17 @@
 //
 
 import UIKit
+import CoreData
 
 class RegisterVC: UIViewController {
     
+    var context: NSManagedObjectContext{
+            
+        guard let app = UIApplication.shared.delegate as? AppDelegate else { fatalError() }
+        return app.persistentContainer.viewContext
+    }
+
+    @IBOutlet weak var alertLbl: UILabel!
     @IBOutlet weak var welcomeLbl: UILabel!
     @IBOutlet weak var goLoginBtn: UIButton!
 
@@ -21,6 +29,8 @@ class RegisterVC: UIViewController {
     let phoneFormFieldView = FormFieldView(text:"Phone")
     let registerButton = makeButton(withText: "회원가입")
 
+    var userInfo:UserInfoStruct!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,7 +61,7 @@ extension RegisterVC {
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.topAnchor.constraint(equalTo: welcomeLbl.bottomAnchor, constant: 30),
+            stackView.topAnchor.constraint(equalTo: welcomeLbl.bottomAnchor, constant: 40),
             emailFormFieldView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: emailFormFieldView.trailingAnchor, multiplier: 2),
             
@@ -76,6 +86,7 @@ extension RegisterVC {
     
     @objc func registerTapped() {
         
+        let semaphore = DispatchSemaphore(value: 0)
         guard let url = URL(string: "http://3.39.188.228:9090/account/signup") else {
             print("유효하지 않은 URL입니다.")
             return
@@ -117,17 +128,52 @@ extension RegisterVC {
             }
             
             // 응답 처리
-            guard let data = data else {return}
-            let responseString = String(data: data, encoding: .utf8)
-            print("응답 데이터: \(responseString ?? "")")
+            guard let JSONdata = data else {return}
+            print("응답 데이터: \(String(data: JSONdata, encoding: .utf8) ?? "")")
             
-            //리턴된 json값을 key:value 형식으로 변환
-            if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]{
-                
+            // 응답 처리
+            let decoder = JSONDecoder()
+            do {
+                let decodedData = try decoder.decode(UserInfoStruct.self, from: JSONdata)
+                self.userInfo = decodedData
+            }catch{
+                print(error)
+                semaphore.signal()
+                return
             }
+            semaphore.signal()
         }
         task.resume()
+        semaphore.wait()
         
+        guard let userInfo = userInfo else {
+            
+            alertLbl.textColor = .red
+            alertLbl.text = "이미 존재하는 계정입니다"
+            return
+        }
+        
+        let userEntity = NSEntityDescription.insertNewObject(forEntityName: "UserInfo", into: self.context)
+
+        //CoreData에 유저정보 저장
+        userEntity.setValue(userInfo.email, forKey: "email")
+        userEntity.setValue(userInfo.password, forKey: "password")
+        userEntity.setValue(userInfo.name, forKey: "name")
+        userEntity.setValue(userInfo.phone, forKey: "phone")
+        userEntity.setValue(userInfo.birthday, forKey: "birthday")
+        userEntity.setValue(userInfo.safeMoney, forKey: "safeMoney")
+        userEntity.setValue(userInfo.reject, forKey: "reject")
+        
+        //영구저장소에 반영
+        do {
+            try self.context.save()
+            print("User Data saved successfully")
+
+        } catch {
+            print("Failed to save data: \(error)")
+        }
+        //메인SB로 이동
+        dismiss(animated: true)
     }
 }
 

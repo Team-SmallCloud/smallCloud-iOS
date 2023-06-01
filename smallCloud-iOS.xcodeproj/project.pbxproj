@@ -13,6 +13,7 @@
 		9A24D6CD2A1F4830006759E3 /* catAndWire.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6CC2A1F4830006759E3 /* catAndWire.json */; };
 		9A24D6D12A20A7B0006759E3 /* loading-burst.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6D02A20A7AF006759E3 /* loading-burst.json */; };
 		9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332212A27481C0057215A /* Data.xcdatamodeld */; };
+		9A3332252A28A6A60057215A /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332242A28A6A60057215A /* userInfo.swift */; };
 		9A492DF22A265A8600836814 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A492DF12A265A8600836814 /* LoginVC.swift */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		9A24D6CC2A1F4830006759E3 /* catAndWire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catAndWire.json; sourceTree = "<group>"; };
 		9A24D6D02A20A7AF006759E3 /* loading-burst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-burst.json"; sourceTree = "<group>"; };
 		9A3332222A27481C0057215A /* userInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userInfo.xcdatamodel; sourceTree = "<group>"; };
+		9A3332242A28A6A60057215A /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
 		9A492DF12A265A8600836814 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
 				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
 				9A492DF12A265A8600836814 /* LoginVC.swift */,
+				9A3332242A28A6A60057215A /* userInfo.swift */,
 				9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */,
 				9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */,
 				9A9C1C7529EFEC0F002E972A /* Main.storyboard */,
@@ -187,6 +190,7 @@
 				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
 				9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */,
+				9A3332252A28A6A60057215A /* userInfo.swift in Sources */,
 				9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */,
 				9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */,
 			);

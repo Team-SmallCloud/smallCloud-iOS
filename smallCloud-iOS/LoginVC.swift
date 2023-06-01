@@ -16,21 +16,10 @@ class LoginVC: UIViewController {
         return app.persistentContainer.viewContext
     }
     
-    struct UserInfo:Codable{
-        let id:Int
-        let email:String
-        let password:String
-        let name:String
-        let phone:String
-        let reject:Bool
-        let birthday:String?
-        let safeMoney:Int
-    }
-    
     @IBOutlet weak var loginLbl: UILabel!
     let stackView = UIStackView()
     
-    var userInfo: UserInfo!
+    var userInfo: UserInfoStruct!
     let emailFormFieldView = FormFieldView(text:"Email")
     let pwFormFieldView = FormFieldView(text:"Password")
     let loginButton = makeButton(withText: "로그인")
@@ -40,6 +29,9 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+        ///
+        emailFormFieldView.textField.text = "123@naver.com"
+        pwFormFieldView.textField.text = "aA1234567!"
     }
 }
 
@@ -117,7 +109,7 @@ extension LoginVC {
             
             let decoder = JSONDecoder()
             do {
-                let decodedData = try decoder.decode(UserInfo.self, from: JSONdata)
+                let decodedData = try decoder.decode(UserInfoStruct.self, from: JSONdata)
                 self.userInfo = decodedData
             }catch{
                 print(error)
