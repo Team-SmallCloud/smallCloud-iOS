@@ -42,6 +42,7 @@
 		38E5C6F42A2879C00091E300 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F32A2879B50091E300 /* libc++.tbd */; };
 		38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */; };
 		38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F72A2879E00091E300 /* libxml2.tbd */; };
+		38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapViewController.swift */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
 		9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* ViewController.swift */; };
@@ -95,6 +96,7 @@
 		38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
+		38E5C6FA2A2883170091E300 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */,
 				9A9C1C7329EFEC0F002E972A /* ViewController.swift */,
 				9A9C1C7529EFEC0F002E972A /* Main.storyboard */,
+				38E5C6FA2A2883170091E300 /* MapViewController.swift */,
 				9A9C1C7829EFEC10002E972A /* Assets.xcassets */,
 				9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */,
 				9A9C1C7D29EFEC10002E972A /* Info.plist */,
@@ -331,6 +334,7 @@
 				9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
+				38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
