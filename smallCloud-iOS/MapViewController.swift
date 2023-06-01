@@ -24,6 +24,7 @@ var resultList=[Place]()
 
 class MapViewController: UIViewController, MTMapViewDelegate {
 
+    @IBOutlet var mapArea: UIView!
     var mapView:MTMapView!
     var locationManager:CLLocationManager!
     
@@ -63,14 +64,13 @@ class MapViewController: UIViewController, MTMapViewDelegate {
             }
         })
         
-        
-        mapView = MTMapView(frame: CGRect(x: 0, y: 50, width: 450, height: 780))
+        mapView = MTMapView(frame: mapArea.bounds)
         //mapView = MTMapView(frame: self.view.frame)
         mapView.delegate = self
         mapView.baseMapType = .standard
         // 지도 중심 좌표 설정
         mapView.setMapCenter(myMapCenter, animated: true)
-        self.view.addSubview(mapView)
+        self.mapArea.addSubview(mapView)
         
         // 현재 위치 트래킹
         mapView.currentLocationTrackingMode = .onWithoutHeading
