@@ -18,6 +18,7 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var loginLbl: UILabel!
     let stackView = UIStackView()
+    let alertLbl = UILabel()
     
     var userInfo: UserInfoStruct!
     let emailFormFieldView = FormFieldView(text:"Email")
@@ -29,9 +30,6 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         style()
         layout()
-        ///
-        emailFormFieldView.textField.text = "123@naver.com"
-        pwFormFieldView.textField.text = "aA1234567!"
     }
 }
 
@@ -52,7 +50,9 @@ extension LoginVC {
         stackView.addArrangedSubview(loginButton)
         
         view.addSubview(stackView)
+        view.addSubview(alertLbl)
         
+        alertLbl.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -64,7 +64,10 @@ extension LoginVC {
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: pwFormFieldView.trailingAnchor, multiplier: 2),
             
             loginButton.heightAnchor.constraint(equalTo: pwFormFieldView.heightAnchor),
-            loginButton.widthAnchor.constraint(equalTo: pwFormFieldView.widthAnchor)
+            loginButton.widthAnchor.constraint(equalTo: pwFormFieldView.widthAnchor),
+            
+            alertLbl.centerXAnchor.constraint(equalTo: loginLbl.centerXAnchor),
+            alertLbl.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -20)
         ])
     }
 }
@@ -113,21 +116,29 @@ extension LoginVC {
                 self.userInfo = decodedData
             }catch{
                 print(error)
+                semaphore.signal()
             }
             semaphore.signal()
         }
         task.resume()
-        
         semaphore.wait()
+        
+        guard let userInfo = userInfo else {
+            
+            self.alertLbl.textColor = .red
+            self.alertLbl.text = "로그인 실패"
+            return
+        }
+        
         let userEntity = NSEntityDescription.insertNewObject(forEntityName: "UserInfo", into: self.context)
 
-        userEntity.setValue(self.userInfo.email, forKey: "email")
-        userEntity.setValue(self.userInfo.password, forKey: "password")
-        userEntity.setValue(self.userInfo.name, forKey: "name")
-        userEntity.setValue(self.userInfo.phone, forKey: "phone")
-        userEntity.setValue(self.userInfo.birthday, forKey: "birthday")
-        userEntity.setValue(self.userInfo.safeMoney, forKey: "safeMoney")
-        userEntity.setValue(self.userInfo.reject, forKey: "reject")
+        userEntity.setValue(userInfo.email, forKey: "email")
+        userEntity.setValue(userInfo.password, forKey: "password")
+        userEntity.setValue(userInfo.name, forKey: "name")
+        userEntity.setValue(userInfo.phone, forKey: "phone")
+        userEntity.setValue(userInfo.birthday, forKey: "birthday")
+        userEntity.setValue(userInfo.safeMoney, forKey: "safeMoney")
+        userEntity.setValue(userInfo.reject, forKey: "reject")
         
         //영구저장소에 반영
         do {
