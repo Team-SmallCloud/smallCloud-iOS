@@ -35,6 +35,13 @@
 		38E5C6E72A28720F0091E300 /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E5C6CB2A28720F0091E300 /* daum_th_line.png */; };
 		38E5C6E82A28720F0091E300 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E5C6CC2A28720F0091E300 /* map_pin_shadow.png */; };
 		38E5C6E92A28720F0091E300 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6CD2A28720F0091E300 /* DaumMap.framework */; };
+		38E5C6EC2A2879810091E300 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6EB2A2879810091E300 /* CoreLocation.framework */; };
+		38E5C6EE2A2879920091E300 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6ED2A2879920091E300 /* Metal.framework */; };
+		38E5C6F02A28799D0091E300 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6EF2A28799D0091E300 /* QuartzCore.framework */; };
+		38E5C6F22A2879AA0091E300 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F12A2879A90091E300 /* SystemConfiguration.framework */; };
+		38E5C6F42A2879C00091E300 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F32A2879B50091E300 /* libc++.tbd */; };
+		38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */; };
+		38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F72A2879E00091E300 /* libxml2.tbd */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
 		9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* ViewController.swift */; };
@@ -80,6 +87,14 @@
 		38E5C6CB2A28720F0091E300 /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
 		38E5C6CC2A28720F0091E300 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		38E5C6CD2A28720F0091E300 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		38E5C6EB2A2879810091E300 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		38E5C6ED2A2879920091E300 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		38E5C6EF2A28799D0091E300 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		38E5C6F12A2879A90091E300 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		38E5C6F32A2879B50091E300 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +110,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E5C6F42A2879C00091E300 /* libc++.tbd in Frameworks */,
+				38E5C6F02A28799D0091E300 /* QuartzCore.framework in Frameworks */,
+				38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */,
+				38E5C6F22A2879AA0091E300 /* SystemConfiguration.framework in Frameworks */,
+				38E5C6EC2A2879810091E300 /* CoreLocation.framework in Frameworks */,
+				38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */,
+				38E5C6EE2A2879920091E300 /* Metal.framework in Frameworks */,
 				38E5C6E92A28720F0091E300 /* DaumMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,11 +183,26 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		38E5C6EA2A2879800091E300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38E5C6F72A2879E00091E300 /* libxml2.tbd */,
+				38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */,
+				38E5C6F32A2879B50091E300 /* libc++.tbd */,
+				38E5C6F12A2879A90091E300 /* SystemConfiguration.framework */,
+				38E5C6EF2A28799D0091E300 /* QuartzCore.framework */,
+				38E5C6ED2A2879920091E300 /* Metal.framework */,
+				38E5C6EB2A2879810091E300 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A9C1C6329EFEC0F002E972A = {
 			isa = PBXGroup;
 			children = (
 				9A9C1C6E29EFEC0F002E972A /* smallCloud-iOS */,
 				9A9C1C6D29EFEC0F002E972A /* Products */,
+				38E5C6EA2A2879800091E300 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +225,7 @@
 				9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */,
 				9A9C1C7D29EFEC10002E972A /* Info.plist */,
 				38E5C6A72A28720F0091E300 /* DaumMap.embeddedframework */,
+				38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */,
 			);
 			path = "smallCloud-iOS";
 			sourceTree = "<group>";
@@ -437,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7B8C9UPQZ8;
@@ -459,6 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.smallCloud.smallCloud-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/man/Desktop/smallCloud-iOS/smallCloud-iOS/Kakao-Map-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7B8C9UPQZ8;
@@ -491,6 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.smallCloud.smallCloud-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/man/Desktop/smallCloud-iOS/smallCloud-iOS/Kakao-Map-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
