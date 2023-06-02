@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--실종동물-->
+        <!--동물 게시판-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainTabBar2" id="BYZ-38-t0r" customClass="AnimalSearchVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="실종동물" image="Icons" id="WlH-17-uR6"/>
+                    <tabBarItem key="tabBarItem" title="동물 게시판" image="Icons" id="WlH-17-uR6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-793" y="682"/>
         </scene>
-        <!--보호동물-->
+        <!--채팅-->
         <scene sceneID="alF-G5-Bgh">
             <objects>
                 <viewController id="Zu2-ke-0YD" sceneMemberID="viewController">
@@ -34,11 +34,11 @@
                         <viewLayoutGuide key="safeArea" id="dD7-GP-OK4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="보호동물" image="tabler-icon-report-medical" id="8i7-RA-tBV"/>
+                    <tabBarItem key="tabBarItem" title="채팅" image="chat" id="8i7-RA-tBV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7r-D2-hx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="682"/>
+            <point key="canvasLocation" x="1633" y="682"/>
         </scene>
         <!--NFC-->
         <scene sceneID="4YN-mE-bD4">
@@ -54,9 +54,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Nn-tp-tWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="682"/>
+            <point key="canvasLocation" x="52" y="682"/>
         </scene>
-        <!--지도-->
+        <!--병원찾기-->
         <scene sceneID="yaN-8n-Eea">
             <objects>
                 <viewController id="dBI-Xy-h6G" customClass="MapViewController" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,14 +78,14 @@
                             <constraint firstItem="1k6-AR-Uqe" firstAttribute="top" secondItem="nj1-Wd-vDL" secondAttribute="top" id="voX-LV-XBd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="지도" image="map" catalog="system" id="u9i-X5-7PX"/>
+                    <tabBarItem key="tabBarItem" title="병원찾기" image="map" catalog="system" id="u9i-X5-7PX"/>
                     <connections>
                         <outlet property="mapArea" destination="1k6-AR-Uqe" id="OOb-i5-Isw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltt-lN-L5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.9710144927537" y="681.69642857142856"/>
+            <point key="canvasLocation" x="868" y="682"/>
         </scene>
         <!--내정보-->
         <scene sceneID="7EL-1y-9I9">
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvK-GH-CkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="682"/>
+            <point key="canvasLocation" x="2416" y="682"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4zX-GS-GUt">
@@ -115,10 +115,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wMZ-uu-rgZ"/>
-                        <segue destination="Zu2-ke-0YD" kind="relationship" relationship="viewControllers" id="aLZ-GF-XAf"/>
                         <segue destination="zP5-JK-6de" kind="relationship" relationship="viewControllers" id="kll-6O-mdS"/>
                         <segue destination="dBI-Xy-h6G" kind="relationship" relationship="viewControllers" id="pyn-Ra-Wjh"/>
-                        <segue destination="cWA-c9-iMF" kind="relationship" relationship="viewControllers" id="eTj-yr-YkD"/>
+                        <segue destination="Zu2-ke-0YD" kind="relationship" relationship="viewControllers" id="Gen-da-vRl"/>
+                        <segue destination="cWA-c9-iMF" kind="relationship" relationship="viewControllers" id="S8d-K6-IWA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UU1-Y7-3KM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,10 +128,10 @@
     </scenes>
     <resources>
         <image name="Icons" width="28" height="28"/>
+        <image name="chat" width="21" height="21"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="tabler-icon-nfc" width="28" height="28"/>
-        <image name="tabler-icon-report-medical" width="28" height="28"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

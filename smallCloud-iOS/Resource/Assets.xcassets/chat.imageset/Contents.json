@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "tabler-icon-report-medical.png",
+      "filename" : "chat.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "chat2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
