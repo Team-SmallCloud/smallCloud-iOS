@@ -13,9 +13,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        //로그인 여부에 따라 분기예정
+        let storyboard = UIStoryboard(name: "LoginSB", bundle: nil) // LoginSB.storyboard 가져오기
+        guard let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginMainView") as? LoginMainVC else { return }
+        window?.rootViewController = loginVC
+
+
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -47,6 +51,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func changeRootViewController (_ vc: UIViewController, animated: Bool) {
+        guard let window = self.window else { return }
+        window.rootViewController = vc // 전환
+    }
 
 }
 

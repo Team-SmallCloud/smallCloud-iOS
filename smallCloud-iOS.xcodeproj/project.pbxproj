@@ -45,12 +45,22 @@
 		38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapViewController.swift */; };
 		9A1EE25B2A29050A00AA1549 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25A2A29050A00AA1549 /* Alamofire */; };
 		9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25D2A29051A00AA1549 /* SwiftyJSON */; };
+		9A24D6C32A1F3A33006759E3 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */; };
+		9A24D6C62A1F3ACD006759E3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9A24D6C52A1F3ACD006759E3 /* Lottie */; };
+		9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */; };
+		9A24D6CD2A1F4830006759E3 /* catAndWire.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6CC2A1F4830006759E3 /* catAndWire.json */; };
+		9A24D6D12A20A7B0006759E3 /* loading-burst.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6D02A20A7AF006759E3 /* loading-burst.json */; };
+		9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332212A27481C0057215A /* Data.xcdatamodeld */; };
+		9A3332252A28A6A60057215A /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332242A28A6A60057215A /* userInfo.swift */; };
+		9A492DF22A265A8600836814 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A492DF12A265A8600836814 /* LoginVC.swift */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
 		9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* ViewController.swift */; };
 		9A9C1C7729EFEC0F002E972A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7529EFEC0F002E972A /* Main.storyboard */; };
 		9A9C1C7929EFEC10002E972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7829EFEC10002E972A /* Assets.xcassets */; };
 		9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */; };
+		9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */; };
+		9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +109,13 @@
 		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
 		38E5C6FA2A2883170091E300 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
+		9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainVC.swift; sourceTree = "<group>"; };
+		9A24D6CC2A1F4830006759E3 /* catAndWire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catAndWire.json; sourceTree = "<group>"; };
+		9A24D6D02A20A7AF006759E3 /* loading-burst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-burst.json"; sourceTree = "<group>"; };
+		9A3332222A27481C0057215A /* userInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userInfo.xcdatamodel; sourceTree = "<group>"; };
+		9A3332242A28A6A60057215A /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		9A492DF12A265A8600836814 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +124,8 @@
 		9A9C1C7829EFEC10002E972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9C1C7B29EFEC10002E972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9C1C7D29EFEC10002E972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +143,7 @@
 				38E5C6EE2A2879920091E300 /* Metal.framework in Frameworks */,
 				9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */,
 				38E5C6E92A28720F0091E300 /* DaumMap.framework in Frameworks */,
+				9A24D6C62A1F3ACD006759E3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +223,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A24D6CB2A1F4442006759E3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9A24D6D02A20A7AF006759E3 /* loading-burst.json */,
+				9A24D6CC2A1F4830006759E3 /* catAndWire.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		9A9C1C6329EFEC0F002E972A = {
 			isa = PBXGroup;
 			children = (
@@ -223,13 +252,21 @@
 		9A9C1C6E29EFEC0F002E972A /* smallCloud-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9A24D6CB2A1F4442006759E3 /* Resource */,
 				9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */,
 				9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */,
 				9A9C1C7329EFEC0F002E972A /* ViewController.swift */,
+				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
+				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
+				9A492DF12A265A8600836814 /* LoginVC.swift */,
+				9A3332242A28A6A60057215A /* userInfo.swift */,
+				9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */,
+				9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */,
 				9A9C1C7529EFEC0F002E972A /* Main.storyboard */,
 				38E5C6FA2A2883170091E300 /* MapViewController.swift */,
 				9A9C1C7829EFEC10002E972A /* Assets.xcassets */,
 				9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */,
+				9A3332212A27481C0057215A /* Data.xcdatamodeld */,
 				9A9C1C7D29EFEC10002E972A /* Info.plist */,
 				38E5C6A72A28720F0091E300 /* DaumMap.embeddedframework */,
 				38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */,
@@ -256,6 +293,7 @@
 			packageProductDependencies = (
 				9A1EE25A2A29050A00AA1549 /* Alamofire */,
 				9A1EE25D2A29051A00AA1549 /* SwiftyJSON */,
+				9A24D6C52A1F3ACD006759E3 /* Lottie */,
 			);
 			productName = "smallCloud-iOS";
 			productReference = 9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */;
@@ -288,6 +326,7 @@
 			packageReferences = (
 				9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				9A24D6C42A1F3ACD006759E3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 9A9C1C6D29EFEC0F002E972A /* Products */;
 			projectDirPath = "";
@@ -311,6 +350,7 @@
 				38E5C6CE2A28720F0091E300 /* map_pinup_custom@3x.png in Resources */,
 				38E5C6D62A28720F0091E300 /* copyright.png in Resources */,
 				38E5C6D52A28720F0091E300 /* map_pin_shadow@3x.png in Resources */,
+				9A24D6D12A20A7B0006759E3 /* loading-burst.json in Resources */,
 				9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */,
 				38E5C6D92A28720F0091E300 /* daum_copyright.png in Resources */,
 				38E5C6DD2A28720F0091E300 /* info_box.png in Resources */,
@@ -330,9 +370,11 @@
 				38E5C6E12A28720F0091E300 /* noimage256.png in Resources */,
 				38E5C6D02A28720F0091E300 /* shadow_balloon.png in Resources */,
 				9A9C1C7929EFEC10002E972A /* Assets.xcassets in Resources */,
+				9A24D6CD2A1F4830006759E3 /* catAndWire.json in Resources */,
 				9A9C1C7729EFEC0F002E972A /* Main.storyboard in Resources */,
 				38E5C6E72A28720F0091E300 /* daum_th_line.png in Resources */,
 				38E5C6D12A28720F0091E300 /* map_pinup.png in Resources */,
+				9A24D6C32A1F3A33006759E3 /* LoginSB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +385,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */,
 				9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
+				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
 				38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */,
+				9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */,
+				9A3332252A28A6A60057215A /* userInfo.swift in Sources */,
+				9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */,
+				9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +642,14 @@
 				kind = branch;
 			};
 		};
+		9A24D6C42A1F3ACD006759E3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -607,7 +663,25 @@
 			package = 9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
+		9A24D6C52A1F3ACD006759E3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A24D6C42A1F3ACD006759E3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9A3332212A27481C0057215A /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A3332222A27481C0057215A /* userInfo.xcdatamodel */,
+			);
+			currentVersion = 9A3332222A27481C0057215A /* userInfo.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A9C1C6429EFEC0F002E972A /* Project object */;
 }

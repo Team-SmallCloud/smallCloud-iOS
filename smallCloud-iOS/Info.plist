@@ -10,6 +10,11 @@
 	<string></string>
 	<key>KAKAO_APP_KEY</key>
 	<string>f02d2263d1ed8b90c431d8678e861635</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
