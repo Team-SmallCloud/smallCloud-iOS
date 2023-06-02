@@ -59,18 +59,33 @@
         <!--지도-->
         <scene sceneID="yaN-8n-Eea">
             <objects>
-                <viewController id="dBI-Xy-h6G" sceneMemberID="viewController">
+                <viewController id="dBI-Xy-h6G" customClass="MapViewController" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nj1-Wd-vDL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1k6-AR-Uqe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vhC-Gg-bEk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1k6-AR-Uqe" firstAttribute="leading" secondItem="vhC-Gg-bEk" secondAttribute="leading" id="D4G-NR-iri"/>
+                            <constraint firstItem="vhC-Gg-bEk" firstAttribute="bottom" secondItem="1k6-AR-Uqe" secondAttribute="bottom" id="ML7-bJ-ASX"/>
+                            <constraint firstItem="1k6-AR-Uqe" firstAttribute="trailing" secondItem="vhC-Gg-bEk" secondAttribute="trailing" id="Tmq-Yo-gBQ"/>
+                            <constraint firstItem="1k6-AR-Uqe" firstAttribute="top" secondItem="nj1-Wd-vDL" secondAttribute="top" id="voX-LV-XBd"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="지도" image="map" catalog="system" id="u9i-X5-7PX"/>
+                    <connections>
+                        <outlet property="mapArea" destination="1k6-AR-Uqe" id="OOb-i5-Isw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltt-lN-L5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="682"/>
+            <point key="canvasLocation" x="1457.9710144927537" y="681.69642857142856"/>
         </scene>
         <!--내정보-->
         <scene sceneID="7EL-1y-9I9">
@@ -117,6 +132,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="tabler-icon-nfc" width="28" height="28"/>
         <image name="tabler-icon-report-medical" width="28" height="28"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
