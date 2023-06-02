@@ -42,20 +42,20 @@
 		38E5C6F42A2879C00091E300 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F32A2879B50091E300 /* libc++.tbd */; };
 		38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */; };
 		38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F72A2879E00091E300 /* libxml2.tbd */; };
-		38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapViewController.swift */; };
-		9A1EE25B2A29050A00AA1549 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25A2A29050A00AA1549 /* Alamofire */; };
+		38E5C6FB2A2883170091E300 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapVC.swift */; };
 		9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25D2A29051A00AA1549 /* SwiftyJSON */; };
 		9A24D6C32A1F3A33006759E3 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */; };
-		9A24D6C62A1F3ACD006759E3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9A24D6C52A1F3ACD006759E3 /* Lottie */; };
 		9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */; };
 		9A24D6CD2A1F4830006759E3 /* catAndWire.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6CC2A1F4830006759E3 /* catAndWire.json */; };
 		9A24D6D12A20A7B0006759E3 /* loading-burst.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6D02A20A7AF006759E3 /* loading-burst.json */; };
 		9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332212A27481C0057215A /* Data.xcdatamodeld */; };
-		9A3332252A28A6A60057215A /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332242A28A6A60057215A /* userInfo.swift */; };
+		9A3332252A28A6A60057215A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3332242A28A6A60057215A /* UserInfo.swift */; };
 		9A492DF22A265A8600836814 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A492DF12A265A8600836814 /* LoginVC.swift */; };
+		9A4DF7E32A29DB13001BADF8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4DF7E22A29DB13001BADF8 /* Lottie */; };
+		9A4DF7E62A29DB22001BADF8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4DF7E52A29DB22001BADF8 /* Alamofire */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
-		9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* ViewController.swift */; };
+		9A9C1C7429EFEC0F002E972A /* AnimalSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* AnimalSearchVC.swift */; };
 		9A9C1C7729EFEC0F002E972A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7529EFEC0F002E972A /* Main.storyboard */; };
 		9A9C1C7929EFEC10002E972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7829EFEC10002E972A /* Assets.xcassets */; };
 		9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */; };
@@ -108,18 +108,18 @@
 		38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
-		38E5C6FA2A2883170091E300 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		38E5C6FA2A2883170091E300 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
 		9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainVC.swift; sourceTree = "<group>"; };
 		9A24D6CC2A1F4830006759E3 /* catAndWire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catAndWire.json; sourceTree = "<group>"; };
 		9A24D6D02A20A7AF006759E3 /* loading-burst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-burst.json"; sourceTree = "<group>"; };
 		9A3332222A27481C0057215A /* userInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userInfo.xcdatamodel; sourceTree = "<group>"; };
-		9A3332242A28A6A60057215A /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		9A3332242A28A6A60057215A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		9A492DF12A265A8600836814 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A9C1C7329EFEC0F002E972A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A9C1C7329EFEC0F002E972A /* AnimalSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearchVC.swift; sourceTree = "<group>"; };
 		9A9C1C7629EFEC0F002E972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A9C1C7829EFEC10002E972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9C1C7B29EFEC10002E972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,17 +133,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A1EE25B2A29050A00AA1549 /* Alamofire in Frameworks */,
 				38E5C6F42A2879C00091E300 /* libc++.tbd in Frameworks */,
 				38E5C6F02A28799D0091E300 /* QuartzCore.framework in Frameworks */,
 				38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */,
 				38E5C6F22A2879AA0091E300 /* SystemConfiguration.framework in Frameworks */,
 				38E5C6EC2A2879810091E300 /* CoreLocation.framework in Frameworks */,
+				9A4DF7E62A29DB22001BADF8 /* Alamofire in Frameworks */,
+				9A4DF7E32A29DB13001BADF8 /* Lottie in Frameworks */,
 				38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */,
 				38E5C6EE2A2879920091E300 /* Metal.framework in Frameworks */,
 				9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */,
 				38E5C6E92A28720F0091E300 /* DaumMap.framework in Frameworks */,
-				9A24D6C62A1F3ACD006759E3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,10 +226,46 @@
 		9A24D6CB2A1F4442006759E3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9A9C1C7829EFEC10002E972A /* Assets.xcassets */,
+				9A9C1C7D29EFEC10002E972A /* Info.plist */,
 				9A24D6D02A20A7AF006759E3 /* loading-burst.json */,
 				9A24D6CC2A1F4830006759E3 /* catAndWire.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		9A4DF7E72A29DBE4001BADF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */,
+				9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */,
+				9A9C1C7329EFEC0F002E972A /* AnimalSearchVC.swift */,
+				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
+				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
+				9A492DF12A265A8600836814 /* LoginVC.swift */,
+				38E5C6FA2A2883170091E300 /* MapVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A4DF7E82A29DBFB001BADF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */,
+				9A9C1C7529EFEC0F002E972A /* Main.storyboard */,
+				9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */,
+				9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A4DF7E92A29DC0C001BADF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A3332212A27481C0057215A /* Data.xcdatamodeld */,
+				9A3332242A28A6A60057215A /* UserInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9A9C1C6329EFEC0F002E972A = {
@@ -252,22 +288,10 @@
 		9A9C1C6E29EFEC0F002E972A /* smallCloud-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9A4DF7E92A29DC0C001BADF8 /* Model */,
+				9A4DF7E82A29DBFB001BADF8 /* View */,
+				9A4DF7E72A29DBE4001BADF8 /* Controller */,
 				9A24D6CB2A1F4442006759E3 /* Resource */,
-				9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */,
-				9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */,
-				9A9C1C7329EFEC0F002E972A /* ViewController.swift */,
-				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
-				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
-				9A492DF12A265A8600836814 /* LoginVC.swift */,
-				9A3332242A28A6A60057215A /* userInfo.swift */,
-				9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */,
-				9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */,
-				9A9C1C7529EFEC0F002E972A /* Main.storyboard */,
-				38E5C6FA2A2883170091E300 /* MapViewController.swift */,
-				9A9C1C7829EFEC10002E972A /* Assets.xcassets */,
-				9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */,
-				9A3332212A27481C0057215A /* Data.xcdatamodeld */,
-				9A9C1C7D29EFEC10002E972A /* Info.plist */,
 				38E5C6A72A28720F0091E300 /* DaumMap.embeddedframework */,
 				38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */,
 			);
@@ -291,9 +315,9 @@
 			);
 			name = "smallCloud-iOS";
 			packageProductDependencies = (
-				9A1EE25A2A29050A00AA1549 /* Alamofire */,
 				9A1EE25D2A29051A00AA1549 /* SwiftyJSON */,
-				9A24D6C52A1F3ACD006759E3 /* Lottie */,
+				9A4DF7E22A29DB13001BADF8 /* Lottie */,
+				9A4DF7E52A29DB22001BADF8 /* Alamofire */,
 			);
 			productName = "smallCloud-iOS";
 			productReference = 9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */;
@@ -324,9 +348,9 @@
 			);
 			mainGroup = 9A9C1C6329EFEC0F002E972A;
 			packageReferences = (
-				9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				9A24D6C42A1F3ACD006759E3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				9A4DF7E12A29DB13001BADF8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				9A4DF7E42A29DB22001BADF8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 9A9C1C6D29EFEC0F002E972A /* Products */;
 			projectDirPath = "";
@@ -386,13 +410,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */,
-				9A9C1C7429EFEC0F002E972A /* ViewController.swift in Sources */,
+				9A9C1C7429EFEC0F002E972A /* AnimalSearchVC.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
 				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
-				38E5C6FB2A2883170091E300 /* MapViewController.swift in Sources */,
+				38E5C6FB2A2883170091E300 /* MapVC.swift in Sources */,
 				9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */,
-				9A3332252A28A6A60057215A /* userInfo.swift in Sources */,
+				9A3332252A28A6A60057215A /* UserInfo.swift in Sources */,
 				9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */,
 				9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */,
 			);
@@ -548,7 +572,7 @@
 					"$(PROJECT_DIR)/smallCloud-iOS/DaumMap.embeddedframework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "smallCloud-iOS/Info.plist";
+				INFOPLIST_FILE = "smallCloud-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -582,7 +606,7 @@
 					"$(PROJECT_DIR)/smallCloud-iOS/DaumMap.embeddedframework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "smallCloud-iOS/Info.plist";
+				INFOPLIST_FILE = "smallCloud-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -626,14 +650,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -642,7 +658,7 @@
 				kind = branch;
 			};
 		};
-		9A24D6C42A1F3ACD006759E3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		9A4DF7E12A29DB13001BADF8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
 			requirement = {
@@ -650,23 +666,31 @@
 				kind = branch;
 			};
 		};
+		9A4DF7E42A29DB22001BADF8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9A1EE25A2A29050A00AA1549 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9A1EE2592A29050900AA1549 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		9A1EE25D2A29051A00AA1549 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9A1EE25C2A29051A00AA1549 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
-		9A24D6C52A1F3ACD006759E3 /* Lottie */ = {
+		9A4DF7E22A29DB13001BADF8 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A24D6C42A1F3ACD006759E3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 9A4DF7E12A29DB13001BADF8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		9A4DF7E52A29DB22001BADF8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A4DF7E42A29DB22001BADF8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 
