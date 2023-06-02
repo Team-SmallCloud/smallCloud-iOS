@@ -10,20 +10,21 @@
       }
     },
     {
-      "identity" : "swiftyjson",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "af1f7a2007d607fbe735c445f19080df4260fe8e"
-    },
-    {
       "identity" : "lottie-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-ios",
       "state" : {
         "branch" : "master",
         "revision" : "df55b4c72c64b0d688d1d24633fae9f1257fe82e"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "af1f7a2007d607fbe735c445f19080df4260fe8e"
       }
     }
   ],
