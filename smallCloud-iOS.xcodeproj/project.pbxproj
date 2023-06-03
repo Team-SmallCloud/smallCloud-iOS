@@ -44,6 +44,9 @@
 		38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F72A2879E00091E300 /* libxml2.tbd */; };
 		38E5C6FB2A2883170091E300 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapVC.swift */; };
 		9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25D2A29051A00AA1549 /* SwiftyJSON */; };
+		9A1EF5662A29FA1A00261F7A /* NfcTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */; };
+		9A1EF5682A29FB2800261F7A /* nfc-signal.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EF5672A29FB2800261F7A /* nfc-signal.json */; };
+		9A1EF56A2A2A0A2D00261F7A /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EF5692A2A0A2D00261F7A /* CustomColor.swift */; };
 		9A24D6C32A1F3A33006759E3 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */; };
 		9A24D6C82A1F3B4F006759E3 /* LoginMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */; };
 		9A24D6CD2A1F4830006759E3 /* catAndWire.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A24D6CC2A1F4830006759E3 /* catAndWire.json */; };
@@ -109,6 +112,10 @@
 		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
 		38E5C6FA2A2883170091E300 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcTagVC.swift; sourceTree = "<group>"; };
+		9A1EF5672A29FB2800261F7A /* nfc-signal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "nfc-signal.json"; sourceTree = "<group>"; };
+		9A1EF5692A2A0A2D00261F7A /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomColor.swift; path = ../../../../../CustomColor.swift; sourceTree = "<group>"; };
+		9A1EF56B2A2A4FF700261F7A /* smallCloud-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "smallCloud-iOS.entitlements"; sourceTree = "<group>"; };
 		9A24D6C22A1F3A33006759E3 /* LoginSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
 		9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainVC.swift; sourceTree = "<group>"; };
 		9A24D6CC2A1F4830006759E3 /* catAndWire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catAndWire.json; sourceTree = "<group>"; };
@@ -226,10 +233,13 @@
 		9A24D6CB2A1F4442006759E3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9A1EF5692A2A0A2D00261F7A /* CustomColor.swift */,
 				9A9C1C7829EFEC10002E972A /* Assets.xcassets */,
 				9A9C1C7D29EFEC10002E972A /* Info.plist */,
 				9A24D6D02A20A7AF006759E3 /* loading-burst.json */,
 				9A24D6CC2A1F4830006759E3 /* catAndWire.json */,
+				9A1EF5672A29FB2800261F7A /* nfc-signal.json */,
+				9A1EF56B2A2A4FF700261F7A /* smallCloud-iOS.entitlements */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -244,6 +254,7 @@
 				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
 				9A492DF12A265A8600836814 /* LoginVC.swift */,
 				38E5C6FA2A2883170091E300 /* MapVC.swift */,
+				9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,6 +384,7 @@
 				38E5C6DC2A28720F0091E300 /* map_pin_red.png in Resources */,
 				38E5C6CE2A28720F0091E300 /* map_pinup_custom@3x.png in Resources */,
 				38E5C6D62A28720F0091E300 /* copyright.png in Resources */,
+				9A1EF5682A29FB2800261F7A /* nfc-signal.json in Resources */,
 				38E5C6D52A28720F0091E300 /* map_pin_shadow@3x.png in Resources */,
 				9A24D6D12A20A7B0006759E3 /* loading-burst.json in Resources */,
 				9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */,
@@ -411,7 +423,9 @@
 			files = (
 				9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */,
 				9A9C1C7429EFEC0F002E972A /* AnimalSearchVC.swift in Sources */,
+				9A1EF56A2A2A0A2D00261F7A /* CustomColor.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
+				9A1EF5662A29FA1A00261F7A /* NfcTagVC.swift in Sources */,
 				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
 				38E5C6FB2A2883170091E300 /* MapVC.swift in Sources */,
@@ -478,6 +492,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -538,6 +553,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -564,6 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "smallCloud-iOS/Resource/smallCloud-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WCTHZ894XR;
@@ -573,6 +590,10 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "smallCloud-iOS/Resource/Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Allow NFC scanning";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -583,7 +604,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.smallCloud.smallCloud-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.idu.smallCloud.smallCloud-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "./smallCloud-iOS/Kakao-Map-Bridge-Header.h";
@@ -598,6 +619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "smallCloud-iOS/Resource/smallCloud-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WCTHZ894XR;
@@ -607,6 +629,10 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "smallCloud-iOS/Resource/Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Allow NFC scanning";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -617,7 +643,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.smallCloud.smallCloud-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.idu.smallCloud.smallCloud-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "./smallCloud-iOS/Kakao-Map-Bridge-Header.h";
