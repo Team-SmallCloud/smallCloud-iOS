@@ -61,7 +61,7 @@ class MyPageVC: UIViewController {
             if userInfo.first != nil {
                 nameLbl.text = userInfo.first?.name
                 phoneLbl.text = formatPhoneNumber(userInfo.first?.phone)
-                //gpsLbl.text = userInfo.first?.juso ?? "서울 노원"
+                gpsLbl.text = userInfo.first?.juso ?? "서울 노원"
                 safeMoneyLbl.text = String (userInfo.first?.safeMoney ?? 0) + "원"
             }//비로그인 상태
             else {

@@ -3,6 +3,7 @@
     <entity name="UserInfo" representedClassName="UserInfo" syncable="YES" codeGenerationType="class">
         <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="email" attributeType="String"/>
+        <attribute name="juso" optional="YES" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="password" attributeType="String"/>
         <attribute name="phone" attributeType="String"/>
