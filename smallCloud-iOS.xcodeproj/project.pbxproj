@@ -43,6 +43,7 @@
 		38E5C6F62A2879D60091E300 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F52A2879CC0091E300 /* libsqlite3.tbd */; };
 		38E5C6F82A2879EA0091E300 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E5C6F72A2879E00091E300 /* libxml2.tbd */; };
 		38E5C6FB2A2883170091E300 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5C6FA2A2883170091E300 /* MapVC.swift */; };
+		9A094BB82A2DC3110065FF52 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A094BB72A2DC3110065FF52 /* MyPageVC.swift */; };
 		9A1EE25E2A29051A00AA1549 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1EE25D2A29051A00AA1549 /* SwiftyJSON */; };
 		9A1EF5662A29FA1A00261F7A /* NfcTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */; };
 		9A1EF5682A29FB2800261F7A /* nfc-signal.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1EF5672A29FB2800261F7A /* nfc-signal.json */; };
@@ -112,6 +113,7 @@
 		38E5C6F72A2879E00091E300 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		38E5C6F92A287A780091E300 /* Kakao-Map-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakao-Map-Bridge-Header.h"; sourceTree = "<group>"; };
 		38E5C6FA2A2883170091E300 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		9A094BB72A2DC3110065FF52 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcTagVC.swift; sourceTree = "<group>"; };
 		9A1EF5672A29FB2800261F7A /* nfc-signal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "nfc-signal.json"; sourceTree = "<group>"; };
 		9A1EF5692A2A0A2D00261F7A /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomColor.swift; path = ../../../../../CustomColor.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				9A492DF12A265A8600836814 /* LoginVC.swift */,
 				38E5C6FA2A2883170091E300 /* MapVC.swift */,
 				9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */,
+				9A094BB72A2DC3110065FF52 /* MyPageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */,
 				9A9C1C7429EFEC0F002E972A /* AnimalSearchVC.swift in Sources */,
 				9A1EF56A2A2A0A2D00261F7A /* CustomColor.swift in Sources */,
+				9A094BB82A2DC3110065FF52 /* MyPageVC.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
 				9A1EF5662A29FA1A00261F7A /* NfcTagVC.swift in Sources */,
 				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
