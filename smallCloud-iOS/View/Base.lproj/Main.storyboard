@@ -141,6 +141,9 @@
                                     <segment title="실종동물"/>
                                     <segment title="보호동물"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="CfG-BF-pb2"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvt-oz-Aod" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="48" width="414" height="40"/>
