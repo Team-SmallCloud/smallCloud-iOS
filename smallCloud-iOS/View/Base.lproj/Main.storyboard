@@ -12,7 +12,7 @@
         <!--게시판-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainTabBar2" id="BYZ-38-t0r" customClass="AnimalBoardVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimalBoard" id="BYZ-38-t0r" customClass="AnimalBoardVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
         <!--Animal Board DetailVC-->
         <scene sceneID="Pyw-MX-gQB">
             <objects>
-                <viewController id="kRP-qL-Sa8" customClass="AnimalBoardDetailVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimalDetail" id="kRP-qL-Sa8" customClass="AnimalBoardDetailVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5z-dX-yuE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,19 +458,21 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wll-7S-e9V">
-                                                        <rect key="frame" x="8" y="50.5" width="398" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="e civiuda." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F56-MS-GsT">
+                                                        <rect key="frame" x="8" y="43" width="398" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="Wll-7S-e9V" firstAttribute="top" secondItem="2KR-0J-KQc" secondAttribute="bottom" constant="15" id="03N-gY-cXP"/>
-                                                    <constraint firstItem="Wll-7S-e9V" firstAttribute="leading" secondItem="6I4-0g-xSx" secondAttribute="leading" constant="8" id="QQk-Nc-Sse"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Wll-7S-e9V" secondAttribute="trailing" constant="8" id="RC6-MZ-0Zf"/>
+                                                    <constraint firstItem="F56-MS-GsT" firstAttribute="top" secondItem="2KR-0J-KQc" secondAttribute="bottom" constant="7.5" id="5Vy-pv-I8m"/>
+                                                    <constraint firstAttribute="bottom" secondItem="F56-MS-GsT" secondAttribute="bottom" constant="10" id="EhE-wa-t1h"/>
                                                     <constraint firstAttribute="height" constant="140" id="TpY-le-LfZ"/>
+                                                    <constraint firstItem="F56-MS-GsT" firstAttribute="leading" secondItem="2KR-0J-KQc" secondAttribute="leading" id="awm-q9-5gD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="F56-MS-GsT" secondAttribute="trailing" constant="8" id="dNF-BD-Rmn"/>
                                                     <constraint firstItem="2KR-0J-KQc" firstAttribute="top" secondItem="6I4-0g-xSx" secondAttribute="top" constant="14" id="fVq-f3-CtC"/>
                                                     <constraint firstItem="2KR-0J-KQc" firstAttribute="leading" secondItem="6I4-0g-xSx" secondAttribute="leading" constant="8" id="xuS-6f-ZL1"/>
                                                 </constraints>
@@ -531,7 +533,7 @@
                         <outlet property="ageLbl" destination="8aV-fO-3VO" id="n0Z-QJ-anb"/>
                         <outlet property="colorLbl" destination="qkw-0x-bMT" id="hUU-NQ-BID"/>
                         <outlet property="dateLbl" destination="RMy-gf-xI1" id="fwd-PS-rFc"/>
-                        <outlet property="detailLbl" destination="Wll-7S-e9V" id="We3-zk-oao"/>
+                        <outlet property="detailLbl" destination="F56-MS-GsT" id="7wa-eW-0Zv"/>
                         <outlet property="genderLbl" destination="Dkp-jo-Axk" id="WYO-TD-6I8"/>
                         <outlet property="idLbl" destination="RMs-Kc-eyH" id="Lya-HH-tzD"/>
                         <outlet property="kindLbl" destination="udT-dA-oWQ" id="3Fq-9i-Pda"/>
@@ -874,7 +876,7 @@
         <!--동물 게시판-->
         <scene sceneID="F8u-Aq-Lv0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Swe-tY-Y9e" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BoardNAV" automaticallyAdjustsScrollViewInsets="NO" id="Swe-tY-Y9e" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="동물 게시판" image="Icons" id="WlH-17-uR6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cbx-ms-PGg">
@@ -902,6 +904,9 @@
         <image name="phone" width="512" height="512"/>
         <image name="profileLogo" width="512" height="512"/>
         <image name="tabler-icon-nfc" width="28" height="28"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

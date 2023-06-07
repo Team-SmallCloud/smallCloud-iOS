@@ -46,18 +46,27 @@ class NfcTagVC: UIViewController, NFCNDEFReaderSessionDelegate {
     }
     
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
-        print("오류발생")
         print(error.localizedDescription)
     }
     
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         print("NFC발견")
-        for message in messages{
-            for record in message.records{
-                if let string = String(data:record.payload, encoding: .ascii){
-                    print(string)
-                }
+        //첫 메세지만 추출
+        guard let a = messages.first?.records.first else { return }
+        
+        if let nfcString = String(data:a.payload, encoding: .ascii){
+            print(nfcString)
+            
+            if let navController = self.tabBarController?.viewControllers?[0] as? UINavigationController,
+                let destinationVC = navController.topViewController as? AnimalBoardVC {
+                
+                //앞 en문자열 제거
+                let startIndex = nfcString.index(nfcString.startIndex, offsetBy: 3)
+                let substring = nfcString[startIndex...]
+                destinationVC.findNfcID = String(substring)
             }
+            //첫번째 VC로 이동
+            self.tabBarController?.selectedIndex = 0
         }
     }
     

@@ -17,6 +17,8 @@ class AnimalBoardVC: UIViewController {
     
     var animalData:AnimalResponse?
     var wantedAnimalData:[WantedAnimal]?
+    //nfc를 찾았을 때 id값을 저장할 변수
+    var findNfcID:String = ""
     
     override func viewDidLoad() {
         
@@ -30,6 +32,10 @@ class AnimalBoardVC: UIViewController {
         else{
             getProtectAnimalData()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        moveToDetail()
     }
     
     
@@ -99,6 +105,32 @@ class AnimalBoardVC: UIViewController {
         task.resume()
         
     }
+    
+    func moveToDetail(){
+        
+        if !findNfcID.isEmpty {
+            
+            if let matchedAnimal = wantedAnimalData?.first(where: { $0.NFC_id == findNfcID }) {
+                if let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "AnimalDetail") as? AnimalBoardDetailVC {
+                    nextViewController.animalInfo = matchedAnimal
+                    self.navigationController?.pushViewController(nextViewController, animated: true)
+                    findNfcID = ""
+                }
+            }
+            //동일 ID값이 없는 경우
+            else{
+                findNfcID = ""
+                showAlert(title: "실패", message: "동일한 ID를 가진 게시판을 찾는데 실패했습니다")
+            }
+        }
+    }
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+
 }
 
 extension AnimalBoardVC: UITableViewDelegate{
@@ -129,16 +161,6 @@ extension AnimalBoardVC: UITableViewDataSource{
             cell.areaLbl.text = wantedAnimalData?[indexPath.row].place
             cell.gratuityLbl.text = String(wantedAnimalData![indexPath.row].gratuity)+"만원"
             
-//            //썸네일
-//            guard let imgUrl = URL(string: wantedAnimalData?[indexPath.row].shape ?? "") else { return cell }
-//            DispatchQueue.global().async{
-//                guard let data = try? Data(contentsOf: imgUrl) else { return }
-//                guard let image = UIImage(data:data) else { return }
-//                DispatchQueue.main.async {
-//                    cell.animalImgView.image = image
-//                }
-//            }
-//
             let imgCacheKey = NSString(string:wantedAnimalData?[indexPath.row].shape ?? "")
             guard let imgUrl = URL(string:wantedAnimalData?[indexPath.row].shape ?? "") else { return cell}
 

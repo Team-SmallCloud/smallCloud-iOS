@@ -20,7 +20,7 @@ class AnimalBoardDetailVC: UIViewController {
     @IBOutlet var dateLbl: UILabel!
     @IBOutlet var placeLbl: UILabel!
     @IBOutlet var phoneLbl: UILabel!
-    @IBOutlet var detailLbl: UILabel!
+    @IBOutlet var detailLbl: UITextView!
     @IBOutlet var idLbl: UILabel!
     
     var animalInfo:WantedAnimal!
