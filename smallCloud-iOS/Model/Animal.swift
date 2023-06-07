@@ -62,7 +62,7 @@ struct AnimalResponse: Codable {
 struct WantedAnimal:Codable {
     let id: Int
     let name:String //이름
-    let kind_id:String //종
+    let kind:String //종
     let NFC_id:String //RFID값
     let owner_id:Int  //주인ID
     let gender:String //성별
@@ -70,5 +70,12 @@ struct WantedAnimal:Codable {
     let place:String //실종장소
     let gratuity:Int //사례금
     let hppdDate:String //실종날짜
+    let weight:Int //무게
+    let phone:String //연락처
+    let age:Int //나이
+    let color:String //색상
+    let detail:String //설명
+    let neutered:Bool //중성화여부
 }
+
 

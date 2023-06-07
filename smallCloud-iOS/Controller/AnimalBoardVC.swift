@@ -45,10 +45,10 @@ class AnimalBoardVC: UIViewController {
     func getAnimalData(){
         
         wantedAnimalData = [
-            WantedAnimal(id: 1, name: "인절미", kind_id: "골든리트리버", NFC_id: "410100012534881", owner_id: 38, gender: "F", shape: "https://singlesumer.com/files/attach/images/141/247/126/9411e86e6c392caf52ffb06e64b63489.jpg", place: "월계동", gratuity: 70, hppdDate:"20230606"),
-            WantedAnimal(id: 2, name: "앙꼬", kind_id: "한국 고양이", NFC_id: "410100012534882", owner_id: 1, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305301705481.jpg", place: "공릉동", gratuity: 130, hppdDate:"20230605"),
-            WantedAnimal(id: 2, name: "츄츄", kind_id: "시츄", NFC_id: "410100012534883", owner_id: 2, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305125.jpg", place: "중계동", gratuity: 150, hppdDate:"20230604"),
-            WantedAnimal(id: 2, name: "앙꼬", kind_id: "말티즈", NFC_id: "410100012534882", owner_id: 3, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305769.jpg", place: "태릉입구", gratuity: 800, hppdDate:"20230601")
+            WantedAnimal(id: 1, name: "인절미", kind: "골든리트리버", NFC_id: "410100012534881", owner_id: 38, gender: "F", shape: "https://singlesumer.com/files/attach/images/141/247/126/9411e86e6c392caf52ffb06e64b63489.jpg", place: "월계동", gratuity: 70, hppdDate:"20230606", weight:15, phone: "010-1234-1234", age: 1, color: "갈색", detail: "성격이 매우 착하고 밝은 성격이며 사람을 잘 따릅니다. 꼭 찾아주세요..", neutered:false),
+            WantedAnimal(id: 2, name: "앙꼬", kind: "한국 고양이", NFC_id: "410100012534882", owner_id: 1, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305301705481.jpg", place: "공릉동", gratuity: 130, hppdDate:"20230605", weight:7, phone: "010-1234-1234", age: 1, color: "갈색/흰색", detail: "사람을 경계합니다.", neutered:true),
+            WantedAnimal(id: 2, name: "츄츄", kind: "시츄", NFC_id: "410100012534883", owner_id: 2, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305125.jpg", place: "중계동", gratuity: 150, hppdDate:"20230604", weight:6, phone: "010-1234-1234", age: 1, color: "흰색", detail: "꼭 찾아주세요", neutered:true),
+            WantedAnimal(id: 2, name: "스노우", kind: "말티즈", NFC_id: "410100012534882", owner_id: 3, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305769.jpg", place: "태릉입구", gratuity: 800, hppdDate:"20230601", weight:8, phone: "010-1234-1234", age: 1, color: "흰색", detail: "매우 밝고 사람을 잘 따릅니다. 꼭 찾아주세요..", neutered:true)
         ]
         self.tableView.reloadData()
     }
@@ -124,18 +124,37 @@ extension AnimalBoardVC: UITableViewDataSource{
         
         //실종동물
         if segment.selectedSegmentIndex == 0 {
-            cell.kindLbl.text = wantedAnimalData?[indexPath.row].kind_id
+            cell.kindLbl.text = wantedAnimalData?[indexPath.row].kind
             cell.dataLbl.text = wantedAnimalData?[indexPath.row].hppdDate
             cell.areaLbl.text = wantedAnimalData?[indexPath.row].place
             cell.gratuityLbl.text = String(wantedAnimalData![indexPath.row].gratuity)+"만원"
             
-            //썸네일
-            guard let imgUrl = URL(string: wantedAnimalData?[indexPath.row].shape ?? "") else { return cell }
-            DispatchQueue.global().async{
-                guard let data = try? Data(contentsOf: imgUrl) else { return }
-                guard let image = UIImage(data:data) else { return }
-                DispatchQueue.main.async {
-                    cell.animalImgView.image = image
+//            //썸네일
+//            guard let imgUrl = URL(string: wantedAnimalData?[indexPath.row].shape ?? "") else { return cell }
+//            DispatchQueue.global().async{
+//                guard let data = try? Data(contentsOf: imgUrl) else { return }
+//                guard let image = UIImage(data:data) else { return }
+//                DispatchQueue.main.async {
+//                    cell.animalImgView.image = image
+//                }
+//            }
+//
+            let imgCacheKey = NSString(string:wantedAnimalData?[indexPath.row].shape ?? "")
+            guard let imgUrl = URL(string:wantedAnimalData?[indexPath.row].shape ?? "") else { return cell}
+
+            //저장된 이미지가 있는 경우 캐시된 이미지를 불러옴
+            if let cacaheImage = ImageCacheManager.shared.object(forKey: imgCacheKey){
+                cell.animalImgView.image = cacaheImage
+            }else{
+                //이미지 불러오기
+                DispatchQueue.global().async{
+                    guard let data = try? Data(contentsOf: imgUrl) else { return }
+                    guard let image = UIImage(data:data) else { return }
+                    DispatchQueue.main.async{
+                        cell.animalImgView.image = image
+                        //네트워크로 불러온 이미지 캐싱
+                        ImageCacheManager.shared.setObject(image, forKey: imgCacheKey)
+                    }
                 }
             }
 
@@ -148,18 +167,36 @@ extension AnimalBoardVC: UITableViewDataSource{
             cell.areaLbl.text = String(dong!)
             cell.gratuityLbl.text = "-"
             
-            //썸네일
-            guard let imgUrl = URL(string: animalData?.response.body.items.item[indexPath.row].popfile ?? "") else { return cell }
-            DispatchQueue.global().async{
-                guard let data = try? Data(contentsOf: imgUrl) else { return }
-                guard let image = UIImage(data:data) else { return }
-                DispatchQueue.main.async {
-                    cell.animalImgView.image = image
+            let imgCacheKey = NSString(string:animalData?.response.body.items.item[indexPath.row].popfile ?? "")
+            guard let imgUrl = URL(string:animalData?.response.body.items.item[indexPath.row].popfile ?? "") else { return cell}
+
+            //저장된 이미지가 있는 경우 캐시된 이미지를 불러옴
+            if let cacaheImage = ImageCacheManager.shared.object(forKey: imgCacheKey){
+                cell.animalImgView.image = cacaheImage
+            }else{
+                //이미지 불러오기
+                DispatchQueue.global().async{
+                    guard let data = try? Data(contentsOf: imgUrl) else { return }
+                    guard let image = UIImage(data:data) else { return }
+                    DispatchQueue.main.async{
+                        cell.animalImgView.image = image
+                        //네트워크로 불러온 이미지 캐싱
+                        ImageCacheManager.shared.setObject(image, forKey: imgCacheKey)
+                    }
                 }
             }
+
         }
         return cell
     }
-
+    
+    //segue가 동작하기 전 호출
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let dest = segue.destination as? AnimalBoardDetailVC else {return}
+        let myIndexPath = tableView.indexPathForSelectedRow!
+        let row = myIndexPath.row
+        dest.animalInfo = wantedAnimalData?[row]
+    }
 
 }

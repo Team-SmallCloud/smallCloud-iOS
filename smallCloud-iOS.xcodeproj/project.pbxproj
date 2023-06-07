@@ -61,6 +61,7 @@
 		9A7776572A2F618C0016240E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7776562A2F618C0016240E /* Bundle.swift */; };
 		9A7776592A2FB8FD0016240E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7776582A2FB8FD0016240E /* Animal.swift */; };
 		9A77765B2A2FB9290016240E /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77765A2A2FB9290016240E /* CustomColor.swift */; };
+		9A92B0302A3049180030415F /* AnimalBoardDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92B02F2A3049180030415F /* AnimalBoardDetailVC.swift */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
 		9A9C1C7429EFEC0F002E972A /* AnimalBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7329EFEC0F002E972A /* AnimalBoardVC.swift */; };
@@ -133,6 +134,7 @@
 		9A7776562A2F618C0016240E /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		9A7776582A2FB8FD0016240E /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		9A77765A2A2FB9290016240E /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		9A92B02F2A3049180030415F /* AnimalBoardDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBoardDetailVC.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */,
 				9A9C1C7329EFEC0F002E972A /* AnimalBoardVC.swift */,
 				9A094BBD2A2F20AB0065FF52 /* AnimalBoardTableViewCell.swift */,
+				9A92B02F2A3049180030415F /* AnimalBoardDetailVC.swift */,
 				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
 				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
 				9A492DF12A265A8600836814 /* LoginVC.swift */,
@@ -449,6 +452,7 @@
 				9A7776592A2FB8FD0016240E /* Animal.swift in Sources */,
 				38E5C6FB2A2883170091E300 /* MapVC.swift in Sources */,
 				9A094BBE2A2F20AB0065FF52 /* AnimalBoardTableViewCell.swift in Sources */,
+				9A92B0302A3049180030415F /* AnimalBoardDetailVC.swift in Sources */,
 				9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */,
 				9A3332252A28A6A60057215A /* UserInfo.swift in Sources */,
 				9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */,
