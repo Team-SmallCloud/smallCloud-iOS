@@ -70,6 +70,7 @@
 		9A9C1C7C29EFEC10002E972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7A29EFEC10002E972A /* LaunchScreen.storyboard */; };
 		9AC0C5932A24D6F800ECA612 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */; };
 		9AC0C5952A24D72800ECA612 /* FieldAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */; };
+		9ADCF1982A308C3600E71ED9 /* AnimalRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCF1972A308C3600E71ED9 /* AnimalRegisterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +146,7 @@
 		9A9C1C7D29EFEC10002E972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		9AC0C5942A24D72800ECA612 /* FieldAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnimation.swift; sourceTree = "<group>"; };
+		9ADCF1972A308C3600E71ED9 /* AnimalRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRegisterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 				9A92B02F2A3049180030415F /* AnimalBoardDetailVC.swift */,
 				9A24D6C72A1F3B4F006759E3 /* LoginMainVC.swift */,
 				9AC0C5922A24D6F800ECA612 /* RegisterVC.swift */,
+				9ADCF1972A308C3600E71ED9 /* AnimalRegisterVC.swift */,
 				9A492DF12A265A8600836814 /* LoginVC.swift */,
 				38E5C6FA2A2883170091E300 /* MapVC.swift */,
 				9A1EF5652A29FA1A00261F7A /* NfcTagVC.swift */,
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3332232A27481C0057215A /* Data.xcdatamodeld in Sources */,
+				9ADCF1982A308C3600E71ED9 /* AnimalRegisterVC.swift in Sources */,
 				9A7776572A2F618C0016240E /* Bundle.swift in Sources */,
 				9A9C1C7429EFEC0F002E972A /* AnimalBoardVC.swift in Sources */,
 				9A094BB82A2DC3110065FF52 /* MyPageVC.swift in Sources */,

@@ -172,8 +172,12 @@ extension RegisterVC {
         } catch {
             print("Failed to save data: \(error)")
         }
-        //메인SB로 이동
-        dismiss(animated: true)
+        
+        //동물등록 페이지로 이동
+        if let animalRegisterVC = storyboard?.instantiateViewController(withIdentifier: "AnimalRegisterView") as? AnimalRegisterVC{
+            self.navigationController?.navigationItem.leftBarButtonItem?.isHidden = true
+            self.navigationController?.pushViewController(animalRegisterVC, animated: true)
+        }
     }
 }
 
