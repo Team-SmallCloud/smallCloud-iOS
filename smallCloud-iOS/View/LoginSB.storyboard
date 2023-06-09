@@ -91,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F50-KB-63q">
-                                <rect key="frame" x="10" y="219" width="394" height="270"/>
+                                <rect key="frame" x="10" y="219" width="394" height="340"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w8M-OW-6CO">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
@@ -180,6 +180,27 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="registerTapped:" destination="GKq-OU-6yR" eventType="touchUpInside" id="SCd-gL-lw7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWz-f4-qyj">
+                                        <rect key="frame" x="0.0" y="280" width="394" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Tas-cZ-fE6"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.42745098040000001" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="등록안함">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="skipTapped:" destination="GKq-OU-6yR" eventType="touchUpInside" id="7Eh-es-Aqb"/>
                                         </connections>
                                     </button>
                                 </subviews>

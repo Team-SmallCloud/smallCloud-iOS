@@ -21,6 +21,10 @@ class AnimalRegisterVC: UIViewController,UITextFieldDelegate {
         dismiss(animated: true)
     }
     
+    @IBAction func skipTapped(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func NfcBtnTapped(_ sender: UIButton) {
         guard NFCNDEFReaderSession.readingAvailable else {
             let alertController = UIAlertController(
