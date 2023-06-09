@@ -23,30 +23,33 @@ class AnimalBoardDetailVC: UIViewController {
     @IBOutlet var detailLbl: UITextView!
     @IBOutlet var idLbl: UILabel!
     
-    var animalInfo:WantedAnimal!
+    var animalInfo_WantedAnimal:WantedAnimal?
+    var animalInfo_AniamlInfo:AnimalInfo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var neuterYn = false
+        if animalInfo_AniamlInfo?.sexCd == "Y" { neuterYn = true }
         
-        kindLbl.text = animalInfo.kind
-        genderLbl.text = animalInfo.gender
-        ageLbl.text = String(animalInfo.age)+"살"
-        weightLbl.text = String(animalInfo.weight)+"kg"
-        colorLbl.text = animalInfo.color
-        neuteredLbl.text = animalInfo.neutered ? "O":"X"
-        dateLbl.text = animalInfo.hppdDate
-        placeLbl.text = animalInfo.place
-        phoneLbl.text = animalInfo.phone
-        detailLbl.text = animalInfo.detail
-        idLbl.text = animalInfo.NFC_id
+        kindLbl.text = animalInfo_WantedAnimal?.kind ?? animalInfo_AniamlInfo?.kindCd
+        genderLbl.text = animalInfo_WantedAnimal?.gender ?? animalInfo_AniamlInfo?.sexCd
+        ageLbl.text = ((animalInfo_WantedAnimal?.age ?? animalInfo_AniamlInfo?.age) ?? "-")
+        weightLbl.text = ((animalInfo_WantedAnimal?.weight ?? animalInfo_AniamlInfo?.weight) ?? "-")
+        colorLbl.text = animalInfo_WantedAnimal?.color ?? animalInfo_AniamlInfo?.colorCd
+        neuteredLbl.text = animalInfo_WantedAnimal?.neutered ?? neuterYn ? "O":"X"
+        dateLbl.text = animalInfo_WantedAnimal?.hppdDate ?? animalInfo_AniamlInfo?.happenDt
+        placeLbl.text = animalInfo_WantedAnimal?.place ?? animalInfo_AniamlInfo?.happenPlace
+        phoneLbl.text = animalInfo_WantedAnimal?.phone ?? animalInfo_AniamlInfo?.officetel
+        detailLbl.text = animalInfo_WantedAnimal?.detail ?? animalInfo_AniamlInfo?.specialMark
+        idLbl.text = animalInfo_WantedAnimal?.NFC_id ?? "-"
         
         //guard let url = URL(string: animalInfo.shape) else { return }
-        getImg(urlString: animalInfo.shape)
+        getImg(urlString: animalInfo_WantedAnimal?.shape ?? animalInfo_AniamlInfo?.popfile)
     }
     
-    func getImg(urlString:String){
-
+    func getImg(urlString:String?){
+        
+        guard let urlString = urlString else { return }
         let imgCacheKey = NSString(string:urlString)
         guard let imgUrl = URL(string:urlString) else { return  }
 

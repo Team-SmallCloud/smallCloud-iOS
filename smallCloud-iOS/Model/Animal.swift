@@ -70,9 +70,9 @@ struct WantedAnimal:Codable {
     let place:String //실종장소
     let gratuity:Int //사례금
     let hppdDate:String //실종날짜
-    let weight:Int //무게
+    let weight:String //무게
     let phone:String //연락처
-    let age:Int //나이
+    let age:String //나이
     let color:String //색상
     let detail:String //설명
     let neutered:Bool //중성화여부

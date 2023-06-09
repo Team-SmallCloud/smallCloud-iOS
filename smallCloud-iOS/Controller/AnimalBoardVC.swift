@@ -51,10 +51,10 @@ class AnimalBoardVC: UIViewController {
     func getAnimalData(){
         
         wantedAnimalData = [
-            WantedAnimal(id: 1, name: "인절미", kind: "골든리트리버", NFC_id: "410100012534881", owner_id: 38, gender: "F", shape: "https://singlesumer.com/files/attach/images/141/247/126/9411e86e6c392caf52ffb06e64b63489.jpg", place: "월계동", gratuity: 70, hppdDate:"20230606", weight:15, phone: "010-1234-1234", age: 1, color: "갈색", detail: "성격이 매우 착하고 밝은 성격이며 사람을 잘 따릅니다. 꼭 찾아주세요..", neutered:false),
-            WantedAnimal(id: 2, name: "앙꼬", kind: "한국 고양이", NFC_id: "410100012534882", owner_id: 1, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305301705481.jpg", place: "공릉동", gratuity: 130, hppdDate:"20230605", weight:7, phone: "010-1234-1234", age: 1, color: "갈색/흰색", detail: "사람을 경계합니다.", neutered:true),
-            WantedAnimal(id: 2, name: "츄츄", kind: "시츄", NFC_id: "410100012534883", owner_id: 2, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305125.jpg", place: "중계동", gratuity: 150, hppdDate:"20230604", weight:6, phone: "010-1234-1234", age: 1, color: "흰색", detail: "꼭 찾아주세요", neutered:true),
-            WantedAnimal(id: 2, name: "스노우", kind: "말티즈", NFC_id: "410100012534882", owner_id: 3, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305769.jpg", place: "태릉입구", gratuity: 800, hppdDate:"20230601", weight:8, phone: "010-1234-1234", age: 1, color: "흰색", detail: "매우 밝고 사람을 잘 따릅니다. 꼭 찾아주세요..", neutered:true)
+            WantedAnimal(id: 1, name: "인절미", kind: "골든리트리버", NFC_id: "410100012534881", owner_id: 38, gender: "F", shape: "https://singlesumer.com/files/attach/images/141/247/126/9411e86e6c392caf52ffb06e64b63489.jpg", place: "월계동", gratuity: 70, hppdDate:"20230606", weight:"15kg", phone: "010-1234-1234", age: "1살", color: "갈색", detail: "성격이 매우 착하고 밝은 성격이며 사람을 잘 따릅니다. 꼭 찾아주세요..", neutered:false),
+            WantedAnimal(id: 2, name: "앙꼬", kind: "한국 고양이", NFC_id: "410100012534882", owner_id: 1, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305301705481.jpg", place: "공릉동", gratuity: 130, hppdDate:"20230605", weight:"7kg", phone: "010-1234-1234", age: "1살", color: "갈색/흰색", detail: "사람을 경계합니다.", neutered:true),
+            WantedAnimal(id: 2, name: "츄츄", kind: "시츄", NFC_id: "410100012534883", owner_id: 2, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305125.jpg", place: "중계동", gratuity: 150, hppdDate:"20230604", weight:"6kg", phone: "010-1234-1234", age: "1살", color: "흰색", detail: "꼭 찾아주세요", neutered:true),
+            WantedAnimal(id: 2, name: "스노우", kind: "말티즈", NFC_id: "410100012534882", owner_id: 3, gender: "F", shape: "http://www.animal.go.kr/files/shelter/2023/05/202305211305769.jpg", place: "태릉입구", gratuity: 800, hppdDate:"20230601", weight:"8kg", phone: "010-1234-1234", age: "1살", color: "흰색", detail: "매우 밝고 사람을 잘 따릅니다. 꼭 찾아주세요..", neutered:true)
         ]
         self.tableView.reloadData()
     }
@@ -85,7 +85,6 @@ class AnimalBoardVC: UIViewController {
             
             // 응답 처리
             guard let JSONdata = data else {return}
-            print("응답 데이터: \(String(data: JSONdata, encoding: .utf8) ?? "")")
             
             // 응답 처리
             let decoder = JSONDecoder()
@@ -112,7 +111,7 @@ class AnimalBoardVC: UIViewController {
             
             if let matchedAnimal = wantedAnimalData?.first(where: { $0.NFC_id == findNfcID }) {
                 if let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "AnimalDetail") as? AnimalBoardDetailVC {
-                    nextViewController.animalInfo = matchedAnimal
+                    nextViewController.animalInfo_WantedAnimal = matchedAnimal
                     self.navigationController?.pushViewController(nextViewController, animated: true)
                     findNfcID = ""
                 }
@@ -218,7 +217,13 @@ extension AnimalBoardVC: UITableViewDataSource{
         guard let dest = segue.destination as? AnimalBoardDetailVC else {return}
         let myIndexPath = tableView.indexPathForSelectedRow!
         let row = myIndexPath.row
-        dest.animalInfo = wantedAnimalData?[row]
+        
+        if segment.selectedSegmentIndex == 0 {
+            dest.animalInfo_WantedAnimal = wantedAnimalData?[row]
+        }
+        else{
+            dest.animalInfo_AniamlInfo = animalData?.response.body.items.item[row]
+        }
     }
 
 }
