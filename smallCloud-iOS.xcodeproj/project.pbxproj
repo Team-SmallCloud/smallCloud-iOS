@@ -727,6 +727,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "smallCloud-iOS/Resource/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tag me";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "Allow NFC scanning";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
@@ -766,6 +767,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "smallCloud-iOS/Resource/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tag me";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "Allow NFC scanning";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
