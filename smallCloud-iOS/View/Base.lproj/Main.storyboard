@@ -47,13 +47,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8F-53-sLQ" userLabel="Stack View1">
                                                             <rect key="frame" x="0.0" y="0.0" width="103.5" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품종: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9My-az-QDb">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="품종: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9My-az-QDb">
                                                                     <rect key="frame" x="0.0" y="0.0" width="41" height="35"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="리트리버" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-me-91m">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="리트리버" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-me-91m">
                                                                     <rect key="frame" x="41" y="0.0" width="62.5" height="35"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
@@ -64,13 +64,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n06-G3-dNJ" userLabel="Stack View2">
                                                             <rect key="frame" x="0.0" y="35" width="168.5" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실종날짜: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFD-Q5-dG4">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="실종날짜: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFD-Q5-dG4">
                                                                     <rect key="frame" x="0.0" y="0.0" width="72" height="35"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-01-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pu-QM-nn0">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2023-01-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pu-QM-nn0">
                                                                     <rect key="frame" x="72" y="0.0" width="96.5" height="35"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
@@ -98,13 +98,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PT-0A-8gr" userLabel="Stack View4">
                                                             <rect key="frame" x="0.0" y="105" width="117.5" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사례금: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-cJ-sCw">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="사례금: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-cJ-sCw">
                                                                     <rect key="frame" x="0.0" y="0.0" width="56.5" height="35"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100만원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVO-Rt-wPz">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="100만원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVO-Rt-wPz">
                                                                     <rect key="frame" x="56.5" y="0.0" width="61" height="35"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="-200"/>
+            <point key="canvasLocation" x="-322" y="-297"/>
         </scene>
         <!--Animal Board DetailVC-->
         <scene sceneID="Pyw-MX-gQB">
@@ -546,23 +546,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wk6-3W-faz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="611.59420289855075" y="-200.22321428571428"/>
+            <point key="canvasLocation" x="551" y="-297"/>
         </scene>
-        <!--채팅-->
+        <!--ChannelVC-->
         <scene sceneID="alF-G5-Bgh">
             <objects>
-                <viewController id="Zu2-ke-0YD" sceneMemberID="viewController">
+                <viewController id="Zu2-ke-0YD" customClass="ChannelVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ddy-NJ-DBX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="dD7-GP-OK4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="채팅" image="chat" id="8i7-RA-tBV"/>
+                    <navigationItem key="navigationItem" id="cQS-GW-C9D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7r-D2-hx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="802"/>
+            <point key="canvasLocation" x="-313.04347826086956" y="1819.4196428571427"/>
         </scene>
         <!--NFC-->
         <scene sceneID="4YN-mE-bD4">
@@ -578,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Nn-tp-tWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1159" y="479"/>
+            <point key="canvasLocation" x="-1223" y="403"/>
         </scene>
         <!--병원찾기-->
         <scene sceneID="yaN-8n-Eea">
@@ -609,7 +609,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltt-lN-L5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-497" y="682"/>
+            <point key="canvasLocation" x="-1223" y="1115"/>
         </scene>
         <!--내정보-->
         <scene sceneID="7EL-1y-9I9">
@@ -849,7 +849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvK-GH-CkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="931"/>
+            <point key="canvasLocation" x="-1223" y="2525"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4zX-GS-GUt">
@@ -865,13 +865,13 @@
                         <segue destination="Swe-tY-Y9e" kind="relationship" relationship="viewControllers" id="wMZ-uu-rgZ"/>
                         <segue destination="zP5-JK-6de" kind="relationship" relationship="viewControllers" id="kll-6O-mdS"/>
                         <segue destination="dBI-Xy-h6G" kind="relationship" relationship="viewControllers" id="pyn-Ra-Wjh"/>
-                        <segue destination="Zu2-ke-0YD" kind="relationship" relationship="viewControllers" id="Gen-da-vRl"/>
+                        <segue destination="sNc-zY-8uz" kind="relationship" relationship="viewControllers" id="Gen-da-vRl"/>
                         <segue destination="cWA-c9-iMF" kind="relationship" relationship="viewControllers" id="S8d-K6-IWA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UU1-Y7-3KM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2016" y="277"/>
+            <point key="canvasLocation" x="-3470" y="767"/>
         </scene>
         <!--동물 게시판-->
         <scene sceneID="F8u-Aq-Lv0">
@@ -890,7 +890,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZm-bN-qbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1158" y="-200"/>
+            <point key="canvasLocation" x="-1223" y="-297"/>
+        </scene>
+        <!--채팅-->
+        <scene sceneID="n86-Le-mfG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sNc-zY-8uz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="채팅" image="chat" id="8i7-RA-tBV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a1E-79-KaR">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zu2-ke-0YD" kind="relationship" relationship="rootViewController" id="6KF-9c-5VM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ln-T0-uhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223.1884057971015" y="1819.4196428571427"/>
         </scene>
     </scenes>
     <resources>
