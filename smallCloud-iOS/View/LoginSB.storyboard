@@ -76,6 +76,159 @@
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="-35.491071428571423"/>
         </scene>
+        <!--Animal RegisterVC-->
+        <scene sceneID="yvF-pl-OgL">
+            <objects>
+                <viewController storyboardIdentifier="AnimalRegisterView" id="GKq-OU-6yR" customClass="AnimalRegisterVC" customModule="smallCloud_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QkL-PJ-JVC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동물등록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62B-bk-I7i">
+                                <rect key="frame" x="155" y="103" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F50-KB-63q">
+                                <rect key="frame" x="10" y="219" width="394" height="340"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w8M-OW-6CO">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RFID 번호" textAlignment="natural" minimumFontSize="17" disabledBackground="dog-foot" translatesAutoresizingMaskIntoConstraints="NO" id="d85-6h-rQQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="263.5" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="yGJ-bA-zi9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02P-Gj-EG1">
+                                                <rect key="frame" x="273.5" y="0.0" width="120.5" height="60"/>
+                                                <color key="backgroundColor" red="0.42745098040000001" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Chip ID 등록">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="NfcBtnTapped:" destination="GKq-OU-6yR" eventType="touchUpInside" id="il4-XU-Fwa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXO-jg-lXH">
+                                        <rect key="frame" x="0.0" y="70" width="394" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="7Yy-6v-OTd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="품종" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1tJ-Mu-Zgg">
+                                        <rect key="frame" x="0.0" y="140" width="394" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="cJj-n9-pNU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-Rm-Ytb">
+                                        <rect key="frame" x="0.0" y="210" width="394" height="60"/>
+                                        <color key="backgroundColor" red="0.42745098040000001" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ViE-eP-4rV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="등록완료">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerTapped:" destination="GKq-OU-6yR" eventType="touchUpInside" id="SCd-gL-lw7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWz-f4-qyj">
+                                        <rect key="frame" x="0.0" y="280" width="394" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Tas-cZ-fE6"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.42745098040000001" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="등록안함">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="skipTapped:" destination="GKq-OU-6yR" eventType="touchUpInside" id="7Eh-es-Aqb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dDu-7w-cjJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F50-KB-63q" firstAttribute="centerX" secondItem="QkL-PJ-JVC" secondAttribute="centerX" id="61a-MJ-3jZ"/>
+                            <constraint firstItem="dDu-7w-cjJ" firstAttribute="trailing" secondItem="F50-KB-63q" secondAttribute="trailing" constant="10" id="Czd-TF-Ozo"/>
+                            <constraint firstItem="62B-bk-I7i" firstAttribute="top" secondItem="dDu-7w-cjJ" secondAttribute="top" constant="55" id="MZQ-ki-C1d"/>
+                            <constraint firstItem="62B-bk-I7i" firstAttribute="centerX" secondItem="QkL-PJ-JVC" secondAttribute="centerX" id="PNY-LA-PAf"/>
+                            <constraint firstItem="F50-KB-63q" firstAttribute="top" secondItem="62B-bk-I7i" secondAttribute="bottom" constant="80" id="R5Q-r1-6ds"/>
+                            <constraint firstItem="F50-KB-63q" firstAttribute="leading" secondItem="dDu-7w-cjJ" secondAttribute="leading" constant="10" id="pJ0-ZV-c2x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BzT-yZ-9wb"/>
+                    <connections>
+                        <outlet property="kindtxt" destination="1tJ-Mu-Zgg" id="tU2-rb-yHO"/>
+                        <outlet property="nametxt" destination="kXO-jg-lXH" id="EIQ-9a-h34"/>
+                        <outlet property="nfctxt" destination="d85-6h-rQQ" id="MpN-Dg-Nfw"/>
+                        <outlet property="welcomeLbl" destination="62B-bk-I7i" id="ibh-jN-P9x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htZ-LP-zNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5942028985507" y="660.9375"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="k9A-0M-NX7">
             <objects>
@@ -109,8 +262,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dog-foot" width="166" height="166"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

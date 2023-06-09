@@ -21,8 +21,8 @@ class LoginVC: UIViewController {
     let alertLbl = UILabel()
     
     var userInfo: UserInfoStruct!
-    let emailFormFieldView = FormFieldView(text:"Email")
-    let pwFormFieldView = FormFieldView(text:"Password")
+    let emailFormFieldView = FormFieldView(text:"Email", true)
+    let pwFormFieldView = FormFieldView(text:"Password", true)
     let loginButton = makeButton(withText: "로그인")
     var loginNavController: UINavigationController?
     
@@ -130,6 +130,18 @@ extension LoginVC {
             return
         }
         
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserInfo")
+        do {
+            // Fetch Request 실행
+            let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+            try context.execute(batchDeleteRequest)
+
+        } catch {
+            // 오류 처리
+            print("Failed to delete User entity: \(error)")
+        }
+        
+        //로컬 저장소에 로그인 정보저장
         let userEntity = NSEntityDescription.insertNewObject(forEntityName: "UserInfo", into: self.context)
 
         userEntity.setValue(userInfo.email, forKey: "email")

@@ -153,6 +153,17 @@ extension RegisterVC {
             return
         }
         
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserInfo")
+        do {
+            // Fetch Request 실행
+            let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+            try context.execute(batchDeleteRequest)
+
+        } catch {
+            // 오류 처리
+            print("Failed to delete User entity: \(error)")
+        }
+        
         let userEntity = NSEntityDescription.insertNewObject(forEntityName: "UserInfo", into: self.context)
 
         //CoreData에 유저정보 저장
@@ -172,8 +183,12 @@ extension RegisterVC {
         } catch {
             print("Failed to save data: \(error)")
         }
-        //메인SB로 이동
-        dismiss(animated: true)
+        
+        //동물등록 페이지로 이동
+        if let animalRegisterVC = storyboard?.instantiateViewController(withIdentifier: "AnimalRegisterView") as? AnimalRegisterVC{
+            self.navigationController?.navigationItem.leftBarButtonItem?.isHidden = true
+            self.navigationController?.pushViewController(animalRegisterVC, animated: true)
+        }
     }
 }
 
