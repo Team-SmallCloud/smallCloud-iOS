@@ -21,8 +21,8 @@ class LoginVC: UIViewController {
     let alertLbl = UILabel()
     
     var userInfo: UserInfoStruct!
-    let emailFormFieldView = FormFieldView(text:"Email")
-    let pwFormFieldView = FormFieldView(text:"Password")
+    let emailFormFieldView = FormFieldView(text:"Email", true)
+    let pwFormFieldView = FormFieldView(text:"Password", true)
     let loginButton = makeButton(withText: "로그인")
     var loginNavController: UINavigationController?
     

@@ -26,11 +26,13 @@ class FormFieldView: UIView {
     let label = UILabel()
     let invalidLabel = UILabel()
     var editState = EditState.valid
+    var valiException = false
     
     let textField = UITextField()
     
-    init(frame: CGRect = .zero, text: String) {
+    init(frame: CGRect = .zero, text: String, _ validationException:Bool = false) {
         super.init(frame: frame)
+        valiException = validationException
         setup()
         style(placeholder:text)
         layout()
@@ -173,8 +175,10 @@ extension FormFieldView: UITextFieldDelegate {
             invalidLabel.isHidden = true
             label.isHidden = false
         } else {
-            showInvalidEmailMessage()
-            self.textField.becomeFirstResponder()
+            if !valiException {
+                showInvalidEmailMessage()
+                self.textField.becomeFirstResponder()
+            }
         }
         
     }

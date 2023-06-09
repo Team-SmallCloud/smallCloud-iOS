@@ -18,6 +18,8 @@ class LoginMainVC: UIViewController {
     
     //앱 이름
     let appTitleLabel = UILabel()
+    //앱 로고
+    let appLogo = UIImageView()
     
     //둘러보기 버튼
     let enterBtn = UIButton(type: .system)
@@ -41,14 +43,17 @@ class LoginMainVC: UIViewController {
         catAnimationView.play()
 
         //앱이름 레이블 출력
-        view.addSubview(appTitleLabel)
-        self.appTitleLabel.text = "(서비스 이름)"
-        appTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(appLogo)
+        appLogo.image = UIImage(named: "TagMeLogo")
+        appLogo.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            appTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            appTitleLabel.bottomAnchor.constraint(equalTo: catAnimationView.centerYAnchor, constant: -130)
+//            appLogo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            appLogo.bottomAnchor.constraint(equalTo: catAnimationView.centerYAnchor, constant: -130)
+            appLogo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            appLogo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
+            appLogo.bottomAnchor.constraint(equalTo: catAnimationView.centerYAnchor, constant: -130)
         ])
-        appTitleLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        //appTitleLabel.font = UIFont.boldSystemFont(ofSize: 30)
 
         
         //계정찾기 버튼 출력
