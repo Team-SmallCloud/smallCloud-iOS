@@ -62,6 +62,8 @@
 		9A7776572A2F618C0016240E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7776562A2F618C0016240E /* Bundle.swift */; };
 		9A7776592A2FB8FD0016240E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7776582A2FB8FD0016240E /* Animal.swift */; };
 		9A77765B2A2FB9290016240E /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77765A2A2FB9290016240E /* CustomColor.swift */; };
+		9A86F5A62A685E4400BAA301 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A86F5A52A685E4400BAA301 /* LoginManager.swift */; };
+		9A86F5A82A68690300BAA301 /* RegisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A86F5A72A68690300BAA301 /* RegisterManager.swift */; };
 		9A92B0302A3049180030415F /* AnimalBoardDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92B02F2A3049180030415F /* AnimalBoardDetailVC.swift */; };
 		9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */; };
 		9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C1C7129EFEC0F002E972A /* SceneDelegate.swift */; };
@@ -161,6 +163,8 @@
 		9A7776562A2F618C0016240E /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		9A7776582A2FB8FD0016240E /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		9A77765A2A2FB9290016240E /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		9A86F5A52A685E4400BAA301 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		9A86F5A72A68690300BAA301 /* RegisterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterManager.swift; sourceTree = "<group>"; };
 		9A92B02F2A3049180030415F /* AnimalBoardDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBoardDetailVC.swift; sourceTree = "<group>"; };
 		9A9C1C6C29EFEC0F002E972A /* smallCloud-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smallCloud-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9C1C6F29EFEC0F002E972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -359,6 +363,8 @@
 				9ACFEA122A33A3E800AC81BA /* Message.swift */,
 				9ACFEA0D2A33A3E800AC81BA /* StreamError.swift */,
 				9ACFEA202A33ACA100AC81BA /* Sender.swift */,
+				9A86F5A52A685E4400BAA301 /* LoginManager.swift */,
+				9A86F5A72A68690300BAA301 /* RegisterManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -554,9 +560,11 @@
 				9ACFEA192A33A3E800AC81BA /* Message.swift in Sources */,
 				9A9C1C7029EFEC0F002E972A /* AppDelegate.swift in Sources */,
 				9A1EF5662A29FA1A00261F7A /* NfcTagVC.swift in Sources */,
+				9A86F5A82A68690300BAA301 /* RegisterManager.swift in Sources */,
 				9A77765B2A2FB9290016240E /* CustomColor.swift in Sources */,
 				9A492DF22A265A8600836814 /* LoginVC.swift in Sources */,
 				9A9C1C7229EFEC0F002E972A /* SceneDelegate.swift in Sources */,
+				9A86F5A62A685E4400BAA301 /* LoginManager.swift in Sources */,
 				9ACFEA1A2A33A3E800AC81BA /* ChannelFirestoreStream.swift in Sources */,
 				9ACFEA0A2A33A38600AC81BA /* UIColor.swift in Sources */,
 				9ACFEA042A33A33E00AC81BA /* BaseViewController.swift in Sources */,
