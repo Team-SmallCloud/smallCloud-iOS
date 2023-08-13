@@ -8,7 +8,7 @@
 import UIKit
 import CoreNFC
 
-class AnimalRegisterVC: UIViewController,UITextFieldDelegate {
+final class AnimalRegisterVC: UIViewController,UITextFieldDelegate {
 
     @IBOutlet var welcomeLbl: UILabel!
     @IBOutlet var nfctxt: UITextField!

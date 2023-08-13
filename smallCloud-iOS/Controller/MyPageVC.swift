@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class MyPageVC: UIViewController {
+final class MyPageVC: UIViewController {
 
     var context: NSManagedObjectContext{
             

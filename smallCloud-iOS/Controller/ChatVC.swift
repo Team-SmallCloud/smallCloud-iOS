@@ -12,7 +12,7 @@ import Photos
 import FirebaseFirestore
 import FirebaseAuth
 
-class ChatVC: MessagesViewController {
+final class ChatVC: MessagesViewController {
     
     lazy var cameraBarButtonItem: InputBarButtonItem = {
         let button = InputBarButtonItem(type: .system)

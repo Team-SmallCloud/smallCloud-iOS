@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimalBoardDetailVC: UIViewController {
+final class AnimalBoardDetailVC: UIViewController {
 
 
     @IBOutlet var mainImg: UIImageView!

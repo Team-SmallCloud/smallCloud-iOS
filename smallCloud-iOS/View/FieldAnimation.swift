@@ -16,7 +16,7 @@ private struct Local {
     static let foregroundColor: UIColor = .systemGray
 }
 
-class FormFieldView: UIView {
+final class FormFieldView: UIView {
 
     enum EditState {
         case valid

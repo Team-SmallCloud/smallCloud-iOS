@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class RegisterVC: UIViewController {
+final class RegisterVC: UIViewController {
 
     @IBOutlet weak var alertLbl: UILabel!
     @IBOutlet weak var welcomeLbl: UILabel!

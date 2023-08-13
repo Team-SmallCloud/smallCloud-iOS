@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimalBoardTableViewCell: UITableViewCell {
+final class AnimalBoardTableViewCell: UITableViewCell {
 
    
     @IBOutlet var animalImgView: UIImageView!

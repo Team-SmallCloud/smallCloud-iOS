@@ -22,7 +22,7 @@ public struct Place{
 var resultList=[Place]()
 
 
-class MapViewController: UIViewController, MTMapViewDelegate {
+final class MapViewController: UIViewController, MTMapViewDelegate {
 
     @IBOutlet var mapArea: UIView!
     var mapView:MTMapView!

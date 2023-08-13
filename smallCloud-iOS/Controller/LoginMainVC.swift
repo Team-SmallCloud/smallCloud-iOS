@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class LoginMainVC: UIViewController {
+final class LoginMainVC: UIViewController {
     
     private let loginMainView = LoginMainView()
     

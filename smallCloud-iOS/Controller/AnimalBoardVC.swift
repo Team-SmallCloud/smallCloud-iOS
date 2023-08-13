@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimalBoardVC: UIViewController {
+final class AnimalBoardVC: UIViewController {
 
     
     @IBOutlet var gpsBtn: UIButton!

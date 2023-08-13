@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 import CoreNFC
 
-class NfcTagVC: UIViewController, NFCNDEFReaderSessionDelegate {
+final class NfcTagVC: UIViewController, NFCNDEFReaderSessionDelegate {
 
     //시그널 애니메이션
     private let signalAnimationView: LottieAnimationView = {
@@ -29,19 +29,19 @@ class NfcTagVC: UIViewController, NFCNDEFReaderSessionDelegate {
     
     
     @objc func nfcBtnTapped(_ sender: Any) {
+        //NFC지원여부 확인, iOS11부터 지원
         guard NFCNDEFReaderSession.readingAvailable else {
             let alertController = UIAlertController(
                 title: "Scanning Not Supported",
                 message: "This device doesn't support tag scanning.",
                 preferredStyle: .alert
             )
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alertController, animated: true, completion: nil)
             return
         }
-        
+        //NFCNDEFReaderSession객체 생성
         session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
         session?.alertMessage = "NFC를 찾아 스캔해주세요"
+        //NFC감지 시작
         session?.begin()
     }
     
@@ -50,22 +50,20 @@ class NfcTagVC: UIViewController, NFCNDEFReaderSessionDelegate {
     }
     
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        print("NFC발견")
-        //첫 메세지만 추출
-        guard let a = messages.first?.records.first else { return }
+        //NFC의 첫 레코드 메시지만 추출
+        guard let nfcId = messages.first?.records.first else { return }
         
-        if let nfcString = String(data:a.payload, encoding: .ascii){
-            print(nfcString)
+        if let nfcIdString = String(data:nfcId.payload, encoding: .ascii){
             
             if let navController = self.tabBarController?.viewControllers?[0] as? UINavigationController,
                 let destinationVC = navController.topViewController as? AnimalBoardVC {
                 
                 //앞 en문자열 제거
-                let startIndex = nfcString.index(nfcString.startIndex, offsetBy: 3)
-                let substring = nfcString[startIndex...]
+                let startIndex = nfcIdString.index(nfcIdString.startIndex, offsetBy: 3)
+                let substring = nfcIdString[startIndex...]
                 destinationVC.findNfcID = String(substring)
             }
-            //첫번째 VC로 이동
+            //첫번째 탭바로 이동
             self.tabBarController?.selectedIndex = 0
         }
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+final class LoginVC: UIViewController {
 
     @IBOutlet weak var loginLbl: UILabel!
     let stackView = UIStackView()

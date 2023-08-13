@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class LoginMainView:UIView {
+final class LoginMainView:UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

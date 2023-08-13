@@ -11,7 +11,7 @@ import FirebaseAuth
 import Firebase
 import CoreData
 
-class ChannelVC: BaseViewController {
+final class ChannelVC: BaseViewController {
 
     var context: NSManagedObjectContext{
             

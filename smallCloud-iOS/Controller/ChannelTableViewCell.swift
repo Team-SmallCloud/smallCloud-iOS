@@ -7,7 +7,7 @@
 import UIKit
 import SnapKit
 
-class ChannelTableViewCell: UITableViewCell {
+final class ChannelTableViewCell: UITableViewCell {
     lazy var chatRoomLabel: UILabel = {
         let label = UILabel()
         label.textColor = .priamry1
